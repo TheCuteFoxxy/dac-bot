@@ -70,7 +70,7 @@ if(message.member.roles.has(staff.id) {
                     message: 'https://discord.gg/ngHhXAa'
                 });
             break;
-} else {
+} else
 message.channel.send("denied");
             // Just add any case commands if you want to..
          }
