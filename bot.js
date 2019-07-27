@@ -26,42 +26,42 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            // \ping
+            // !ping
             case 'ping':
                 bot.sendMessage({
                     to: channelID,
                     message.channel.send("Pong!" +  ${Date.now() - message.createdTimestamp} + "ms.");
                 });
             break;
-			// \hello
+			// !hello
             case 'hello':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Hello World!'
                 });
             break;
-			// \help
+			// !help
             case 'help':
                 bot.sendMessage({
                     to: channelID,
                     message: '**Commands List:** \n `help` - This \n `prefix` - Displays the bot prefix \n `hello` - Responds "Hello World!" \n `ping` - Checks the bots ping \n `version` - Provides the bot version \n `server-invite` - Provides an invite to the DAC Server'
                 });
             break;
-			// \version
+			// !version
             case 'version':
                 bot.sendMessage({
                     to: channelID,
                     message: '**Bot Current Version:** 1.0.1'
                 });
             break;
-			// \server-invite
+			// !server-invite
             case 'server-invite':
                 bot.sendMessage({
                     to: channelID,
                     message: 'https://discord.gg/ngHhXAa'
                 });
             break;
-      		      // \prefix
+      		      // !prefix
             case 'prefix':
                 bot.sendMessage({
                     to: channelID,
