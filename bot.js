@@ -44,7 +44,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'help':
                 bot.sendMessage({
                     to: channelID,
-                    message: '**Commands List:** help (This command), hello (Responds Hello World!), ping (responds with pong), version (responds with bot version), server invite (responds with an invite to the server)'
+                    message: '**Commands List:** \n help - This \n hello - Responds "Hello World!" \n `ping` - Checks the bots ping \n `version` - Provides the bot version \n `server-invite` - Provides an invite to the DAC Server'
                 });
             break;
 			// \version
