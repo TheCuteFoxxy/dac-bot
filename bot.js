@@ -44,7 +44,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'help':
                 bot.sendMessage({
                     to: channelID,
-                    message: '**Commands List:** \n `help` - This \n `hello` - Responds "Hello World!" \n `ping` - Checks the bots ping \n `version` - Provides the bot version \n `server-invite` - Provides an invite to the DAC Server'
+                    message: '**Commands List:** \n `help` - This \n `prefix` - Displays the bot prefix \n `hello` - Responds "Hello World!" \n `ping` - Checks the bots ping \n `version` - Provides the bot version \n `server-invite` - Provides an invite to the DAC Server'
                 });
             break;
 			// \version
@@ -59,6 +59,13 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'https://discord.gg/ngHhXAa'
+                });
+            break;
+			// \prefix
+            case 'prefix':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '**Bot Prefix: `!`'
                 });
             break;
             // Just add any case commands if you want to..
