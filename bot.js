@@ -54,8 +54,8 @@ bot.on('message', function (user, userID, channelID, message, evt) {
                     message: '**Bot Current Version:** 1.0.1'
                 });
             break;
-			// \server invite
-            case 'server invite':
+			// \server-invite
+            case 'server-invite':
                 bot.sendMessage({
                     to: channelID,
                     message: 'https://discord.gg/ngHhXAa'
