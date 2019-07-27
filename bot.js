@@ -64,7 +64,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
       		      // \prefix
             case 'prefix':
 let staff = guild.roles.get("569313224869281816")
-if(message.member.roles.has(staff.id) {
+if(message.member.roles.has(staff.id)) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'https://discord.gg/ngHhXAa'
