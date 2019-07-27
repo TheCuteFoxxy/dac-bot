@@ -30,7 +30,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'ping':
                 bot.sendMessage({
                     to: channelID,
-                    message: "Pong!" + m.createdTimestamp - message.createdTimestamp + "ms"
+                    message: 'Pong!'
                 });
             break;
 			// !hello
