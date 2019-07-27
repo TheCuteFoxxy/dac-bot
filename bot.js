@@ -65,7 +65,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'prefix':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'https://discord.gg/ngHhXAa'
+                    message: '**Bot Prefix:** `!`'
                 });
             break;
             // Just add any case commands if you want to..
