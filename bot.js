@@ -63,17 +63,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
       		      // \prefix
             case 'prefix':
-let guild = bot.guilds("569304035472179200");
-let staff = guild.roles("569313224869281816")
-if(message.member.roles.has(staff.id)) {
                 bot.sendMessage({
                     to: channelID,
                     message: 'https://discord.gg/ngHhXAa'
                 });
             break;
-} else {
-message.channel.send("denied");
-}
             // Just add any case commands if you want to..
          }
      }
