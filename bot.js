@@ -44,12 +44,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'help':
                 bot.sendMessage({
                     to: channelID,
-                    message: '**Commands List:** 
-			help (This command)
-			hello (Responds Hello World!),
-			ping (responds with pong), 
-			version (responds with bot version), 
-			server invite (responds with an invite to the server)'
+                    message: '**Commands List:** help (This command), hello (Responds Hello World!), ping (responds with pong), version (responds with bot version), server invite (responds with an invite to the server)'
                 });
             break;
 			// \version
