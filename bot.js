@@ -26,25 +26,44 @@ bot.on('message', function (user, userID, channelID, message, evt) {
        
         args = args.splice(1);
         switch(cmd) {
-            // !ping
+            // \ping
             case 'ping':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Pong!'
                 });
             break;
-			// !hello
+			// \hello
             case 'hello':
                 bot.sendMessage({
                     to: channelID,
                     message: 'Hello World!'
                 });
             break;
-			// !help
+			// \help
             case 'help':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'Commands: commands (This command) hello (Responds Hello World!)'
+                    message: '**Commands List:** 
+			help (This command)
+			hello (Responds Hello World!),
+			ping (responds with pong), 
+			version (responds with bot version), 
+			server invite (responds with an invite to the server)'
+                });
+            break;
+			// \version
+            case 'version':
+                bot.sendMessage({
+                    to: channelID,
+                    message: '**Bot Current Version:** 1.0.1'
+                });
+            break;
+			// \server invite
+            case 'server invite':
+                bot.sendMessage({
+                    to: channelID,
+                    message: 'https://discord.gg/ngHhXAa'
                 });
             break;
             // Just add any case commands if you want to..
