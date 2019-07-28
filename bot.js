@@ -12,7 +12,10 @@ var bot = new Discord.Client({
    token: auth.token,
    autorun: true
 });
-client.user.setStatus('online', 'Managing DAC') 
+client.on('ready', () => {
+  client.user.setActivity("your commands", { type: 'WATCHING' })
+  console.log(`Terminal booted up sucessfully.`);
+});
 bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
