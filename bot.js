@@ -58,7 +58,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'debug':
                 bot.sendMessage({
                     to: channelID,
-                    message: '**Bot Current Version:** 1.0.2 \n **Last Update: 7/27/2019 \n **Owner:** ℍᗅℳՏᝨℰℛ#0001 \n **Responsive:** Yes'
+                    message: '**Bot Current Version:** 1.0.2 \n **Last Update:** 7/27/2019 \n **Owner:** ℍᗅℳՏᝨℰℛ#0001 \n **Responsive:** Yes'
                 });
             break;
 			// !server-invite
