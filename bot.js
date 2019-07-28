@@ -15,6 +15,7 @@ var bot = new Discord.Client({
 });
 client.user.setActivity("your commands", {
   type: "WATCHING",
+  URL: https://www.discordadvertisingcentral.org/
 });
 bot.on('ready', function (evt) {
     logger.info('Connected');
