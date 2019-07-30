@@ -21,7 +21,6 @@ bot.on('ready', function (evt) {
     if(message.content.startsWith("!ping")) {
             message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");        
     }
-}
 });
 bot.on('message', function (user, userID, channelID, message, evt)
 bot.on('message', message => {
