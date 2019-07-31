@@ -56,7 +56,6 @@ return;
       message.reply('You didn\'t mention the user to kick!')
 return;
 }
-  }
 });
 
 client.login(auth.token);
