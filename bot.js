@@ -33,9 +33,9 @@ client.on("ready", async () => {
           client.user.setStatus(`online`);
        }, 10000)
   });
-if(command === '>ping'){
+if (message.content.startsWith('>ping')) {
 
-  const m = message.channel.send("Pinging...").then(msg => msg.edit(`<:bot_online:594521677740638219> Pong! Latency is **${Math.round(bot.ping)}ms**.`));
+  const m = message.channel.send("Pinging...").then(msg => msg.edit(`<:bot_online:594521677740638219> Pong! API Latency is **${Math.round(bot.ping)}ms**.`));
 
 }
  
