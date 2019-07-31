@@ -52,8 +52,7 @@ if (message.content === '>ping everyone') {
 }
 if (message.content === '>owner') {
     message.channel.send('The Bot Owner Is: <@548009285892833280>');
-
 }
 });
 
-client.login(auth.token)
+client.login(auth.token);
