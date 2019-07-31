@@ -35,9 +35,7 @@ client.on("ready", async () => {
   });
 client.on('message', message => {
 if(command === 'ping'){
-
   const m = message.channel.send("Pinging...").then(msg => msg.edit(`:bot_online:  Pong! Latency is **${Math.round(bot.ping)}ms**.`));
-
 }
  
  if (message.content === '>avatar') {
@@ -57,5 +55,4 @@ if (message.content === '>owner') {
 
 }
 });
-
 client.login(auth.token);
