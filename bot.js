@@ -35,7 +35,7 @@ client.on("ready", async () => {
   });
 if(command === '>ping'){
 
-  const m = message.channel.send("Pinging...").then(msg => msg.edit(`<:bot_online:594521677740638219> Pong! API Latency is **${Math.round(bot.ping)}ms**.`));
+  const m = message.channel.send("Pinging...").then(msg => msg.edit(`<:bot_online:594521677740638219> Pong! Latency is **${Math.round(bot.ping)}ms**.`));
 
 }
  
