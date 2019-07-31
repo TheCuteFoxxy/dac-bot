@@ -29,9 +29,6 @@ client.on('message', message => {
 if (message.content === '>ban reasons') {
      message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
 }
-if (message.content === '>ping everyone') {
-    message.channel.send('@everyone');
-}
 if (message.content === '>owner') {
     message.channel.send('The Bot Owner Is: <@548009285892833280>');
 }
