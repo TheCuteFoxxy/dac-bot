@@ -34,7 +34,26 @@ if (message.content === '>ping everyone') {
 }
 if (message.content === '>owner') {
     message.channel.send('The Bot Owner Is: <@548009285892833280>');
-}
+  if (!message.guild) return;
+
+  // If the message content starts with ">kick"
+  if (message.content.startsWith('>kick')) {
+    const user = message.mentions.users.first();
+    if (user) {
+      const member = message.guild.member(user);
+      if (member) {
+        member.kick('Optional reason that will display in the audit logs').then(() => {
+          message.reply(`Successfully kicked ${user.tag}`);
+        }).catch(err => {
+          message.reply('I was unable to kick the member');
+          console.error(err);
+        });
+      } else {
+        message.reply('That user isn\'t in this guild!');
+    } else {
+      message.reply('You didn\'t mention the user to kick!');
+    }
+  }
 });
 
 client.login(auth.token);
