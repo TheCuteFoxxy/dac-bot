@@ -1,5 +1,4 @@
 {"name": "DAC Information Bot",
-//Don't forget these damn brackets
 "version": "1.0.3",
 "description": "Information and Management Bot for DAC",
 "main": "bot.js",
