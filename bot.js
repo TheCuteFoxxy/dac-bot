@@ -36,8 +36,8 @@ client.on("ready", async () => {
   });
 if (message.content.startsWith('>ping')) {
 
-      const m = message.channel.send("Pinging...");
-      m.edit(`<:bot_online:594521677740638219> Pong! Latency is **${m.createdTimestamp - message.createdTimestamp}ms**.`);
+      const m = message.channel.send("Pinging...").then(msg => 
+      msg.edit(`<:bot_online:594521677740638219> Pong! Latency is **${m.createdTimestamp - message.createdTimestamp}ms**.`));
 
 }
  
