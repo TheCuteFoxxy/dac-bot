@@ -1,83 +1,40 @@
-var Discord = require('discord.io');
-var logger = require('winston');
-var auth = require('./auth.json');
-var client = new Discord.Client({disableEveryone: true});
-// Configure logger settings
-logger.remove(logger.transports.Console);
-logger.add(new logger.transports.Console, {
-    colorize: true
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const auth = require("./auth.json");
+
+
+client.on('ready', () => {
+  console.log('Connection Successful');
 });
-logger.level = 'debug';
-// Initialize Discord Bot
-var bot = new Discord.Client({
-   token: auth.token,
-   autorun: true
+client.on("ready", async () => {
+    console.log(`${client.user.username} starting`);
+      let setStatus = setInterval(function () {
+          var names = [">help",`DAC`, 'your commands'];
+          var game = names[Math.floor(Math.random() * names.length)];
+         client.user.setActivity(game,{ type: 'watching' });
+          client.user.setStatus(`online`);
+       }, 10000)
+  });
+client.on('message', message => {
+  if (message.content === '>ping') {
+    message.channel.send('Pong!'); message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
+  }
+ 
+ if (message.content === '>avatar') {
+      message.reply(message.author.avatarURL);
+  }
+  if (message.content === '>help') {
+    message.channel.send('**Commands:** \n `help` - This command \n `ping` - Provides the bots latency ping time \n `avatar` - Provides a link to the users avatar \n `ban reasons` - provides a valid list of ban reasons for DAC');
+  }
+if (message.content === '>ban reasons') {
+     message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
+}
+if (message.content === '>ping everyone') {
+    message.channel.send('@everyone');
+}
+if (message.content === '>owner') {
+    message.channel.send('The Bot Owner Is: <@548009285892833280>');
+}
 });
-bot.on('ready', function (evt) {
-    logger.info('Connected');
-    logger.info('Logged in as: ');
-    logger.info(bot.username + ' - (' + bot.id + ')');
-});
-bot.on('message', function (user, userID, channelID, message, evt)
-{
-    // Our bot needs to know if it will execute a command
-    // It will listen for messages that will start with `!`
-    if (message.substring(0, 1) == '!') {
-        var args = message.substring(1).split(' ');
-        var cmd = args[0];
-       
-        args = args.splice(1);
-        switch(cmd) {
-  		         // !ping
-            case 'ping':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Pong!'
-                });
-            break;
-			// !hello
-            case 'hello':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'Hello World!'
-                });
-            break;
-			// !help
-            case 'help':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '**Commands List:** \n `help` - This \n `prefix` - Displays the bot prefix \n `hello` - Responds "Hello World!" \n `ping` - Checks the bots ping \n `version` - Provides the bot version \n `server-invite` - Provides an invite to the DAC Server'
-                });
-            break;
-			// !version
-            case 'version':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '**Bot Current Version:** 1.0.2'
-                });
-            break;
-			// !debug
-            case 'debug':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '**Bot Current Version:** 1.0.2 \n **Last Update:** 7/27/2019 \n **Owner:** ℍᗅℳՏᝨℰℛ#0001 \n **Responsive:** Yes'
-                });
-            break;
-			// !server-invite
-            case 'server-invite':
-                bot.sendMessage({
-                    to: channelID,
-                    message: 'https://discord.gg/ngHhXAa'
-                });
-            break;
-      		      // !prefix
-            case 'prefix':
-                bot.sendMessage({
-                    to: channelID,
-                    message: '**Bot Prefix:** `!`'
-                });
-            break;
-            // Just add any case commands if you want to..
-         }
-     }
-});
+
+client.login(auth.token);
