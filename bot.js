@@ -55,4 +55,5 @@ if (message.content === '>owner') {
 
 }
 });
-client.login(auth.token);
+
+client.login(auth.token)
