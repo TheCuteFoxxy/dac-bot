@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const bot = new Discord.Client();
 const auth = require("./auth.json");
 
 
@@ -8,38 +7,18 @@ client.on('ready', () => {
   console.log('Connection Successful');
 });
 client.on("ready", async () => {
-    console.log(`${client.user.username} starting`);
+    console.log(`${client.user.username} Restarting`);
       let setStatus = setInterval(function () {
-          var names = [">help",`DAC`, 'your commands'];
+          var names = [">help",`DAC`, 'you...'];
           var game = names[Math.floor(Math.random() * names.length)];
          client.user.setActivity(game,{ type: 'watching' });
           client.user.setStatus(`online`);
        }, 10000)
   });
 client.on('message', message => {
-const Discord = require('discord.js');
-const client = new Discord.Client();
-const auth = require("./auth.json");
-
-
-client.on('ready', () => {
-  console.log('Connection Successful');
-});
-client.on("ready", async () => {
-    console.log(`${client.user.username} starting`);
-      let setStatus = setInterval(function () {
-          var names = [">help",`DAC`, 'your commands'];
-          var game = names[Math.floor(Math.random() * names.length)];
-         client.user.setActivity(game,{ type: 'watching' });
-          client.user.setStatus(`online`);
-       }, 10000)
-  });
-if (message.content.startsWith('>ping')) {
-
-      const m = message.channel.send("Pinging...").then(msg => 
-      msg.edit(`<:bot_online:594521677740638219> Pong! Latency is **${m.createdTimestamp - message.createdTimestamp}ms**.`));
-
-}
+  if (message.content === '>ping') {
+    message.channel.send('Pong!'); message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
+  }
  
  if (message.content === '>avatar') {
       message.reply(message.author.avatarURL);
