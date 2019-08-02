@@ -19,7 +19,20 @@ client.on('message', message => {
   if (message.content === '>ping') {
     message.channel.send('Pong!'); message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
   }
- 
+  if (message.content === '>test embed') {
+    // We can create embeds using the MessageEmbed constructor
+    // Read more about all that you can do with the constructor
+    // over at https://discord.js.org/#/docs/main/stable/class/RichEmbed
+    const embed = new RichEmbed()
+      // Set the title of the field
+      .setTitle('Test')
+      // Set the color of the embed
+      .setColor(0xFF0000)
+      // Set the main content of the embed
+      .setDescription('This is a test');
+    // Send the embed to the same channel as the message
+    message.channel.send(embed);
+  }
  if (message.content === '>avatar') {
       message.reply(message.author.avatarURL);
   }
