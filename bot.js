@@ -61,7 +61,7 @@ if (message.content === prefix + 'DAC-789213') {
   message.member.addRole("569319986980454400");
 }
 if (message.content === prefix + 'dm') {
-  message.author.send("DM 1" || "DM 2" || "DM 3"));
+  message.author.send("DM 1" || "DM 2" || "DM 3");
 }
 });
 client.on('guildMemberAdd', member => {
