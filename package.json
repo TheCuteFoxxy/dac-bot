@@ -1,4 +1,4 @@
-{"name": "DAC Information Bot",
+{"name": "dac_information_bot",
 "version": "1.0.3",
 "description": "Information and Management Bot for DAC",
 "main": "bot.js",
