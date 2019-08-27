@@ -1,3 +1,4 @@
+///Version 1.2.1
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -38,6 +39,23 @@ client.on("ready", async () => {
       message.delete(1)
       message.channel.send({embed});
     }      
+if  (message.content === prefix + 'partner req') {
+const embed = {
+  "color": 65331,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Our Partnership Requirements",
+      "value": "\n- Server **must** follow Discord TOS!  \n\n - You must have a partner section in your server! \n\n - A member of at least 50 human users are required! \n\n - We do not ping \n\n  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n\n  If you agree to our requirements, please DM <@548009285892833280> to request a partnership. (DM'ing any other staff will result in the denial of a partnership.) \n\n Our partner ad is located in <#613144689796841582>"
+    }
+  ]
+};
+    message.delete(1)
+    message.channel.send({embed});
+}
     if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313373720674315")
         message.delete(1)
