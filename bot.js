@@ -18,6 +18,26 @@ client.on("ready", async () => {
        }, 10000)
   });
   client.on('message', message => {
+    if  (message.content === prefix + 'test embed') {
+      const embed = {
+        "title": "Discord Advertising Central",
+        "description": "This is a test of the emergency embed system. Please do not remain calm.",
+        "color": 1835263,
+        "timestamp": "2019-08-26T13:49:14.682Z",
+        "footer": {
+          "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+          "text": "DAC © 2019; All Rights Reserved"
+        },
+        "thumbnail": {
+          "url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg"
+        },
+        "image": {
+          "url": "https://cdn.discordapp.com/attachments/615548285456744504/615554484357300244/DAC_banner.jpg"
+        }
+      };
+      message.delete(1)
+      message.channel.send({embed});
+    }      
     if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313373720674315")
         message.delete(1)
@@ -92,5 +112,7 @@ client.on('guildMemberAdd', member => {
 
 member.send(`Welcome ${member} to **Discord Advertising Central**! Please read <#569325072230252546> and <#569341867863441413> for the server rules and advertising guidelines. If you at any time need some help, you can send a message to <@546661574182436864> and a staff member will be glad to assist you! \n\nIf you want to partner, head on over to <#569542837415182343> and read that then ping or DM a Partner Manager and they will guide you from there.\n\nYou can get some roles in <#569335136441729039>.\n\nIf you wish to try out our custom services then head over to <#569539946180771856> \n\n__If you leave the server, all your advertisements will be deleted!__\nThanks for joining!`  +  '\n\n To be verified type  `>DAC-429214`' + ` in <#569320176600743936>`)
 
-});
+
+  
+    });
 client.login(auth.token);
