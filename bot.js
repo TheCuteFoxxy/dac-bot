@@ -56,6 +56,44 @@ const embed = {
     message.delete(1)
     message.channel.send({embed});
 }
+if (message.content === prefix + 'links') {
+const time = message.createdAt
+const embed = {
+  "color": 1376511,
+  "thumbnail": {
+    "url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg"
+  },
+  "image": {
+    "url": "wwww.urlhere.con"
+  },
+  "fields": [
+    {
+      "name": "Links",
+      "value": "**Our Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n **Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
+    }
+  ]
+};
+const embed2 = {
+  "color": 1376511,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved | Last Updated: $(time)"
+  },
+  "thumbnail": {
+    "url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg"
+  },
+  "image": {
+    "url": "wwww.urlhere.con"
+  },
+  "fields": [
+    {
+      "name": "Links",
+      "value": "**Our Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n **Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
+    }
+  ]
+};
+message.channel.send({embed}).then(msg => msg.edit(embed2));
+}
     if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313373720674315")
         message.delete(1)
