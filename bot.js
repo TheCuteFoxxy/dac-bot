@@ -82,9 +82,6 @@ const embed2 = {
   "thumbnail": {
     "url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg"
   },
-  "image": {
-    "url": "wwww.urlhere.con"
-  },
   "fields": [
     {
       "name": "Links",
