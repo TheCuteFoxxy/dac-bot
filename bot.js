@@ -74,14 +74,14 @@ const embed2 = {
   "color": 1376511,
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC © 2019; All Rights Reserved | Last Updated: $(time)"
+    "text": `DAC © 2019; All Rights Reserved | Last Updated: $(time)`
   },
   "thumbnail": {
     "url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg"
   },
   "fields": [
     {
-      "name": "Links",
+      "name": "Links 2",
       "value": "**Our Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n **Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
     }
   ]
