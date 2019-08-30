@@ -86,7 +86,7 @@ const embed2 = {
     }
   ]
 };
-message.channel.send({embed}).then(msg => msg.edit(embed2));
+message.channel.send({embed}).then(msg => msg.edit({embed2}));
 }
     if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313373720674315")
