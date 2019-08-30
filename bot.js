@@ -62,7 +62,7 @@ const embed = {
   "color": 1376511,
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": `DAC © 2019; All Rights Reserved | Last Updated: $(time)`
+    "text": "DAC © 2019; All Rights Reserved | Last Updated:" + "2019-08-26T13:49:14.682Z"
   },
   "thumbnail": {
     "url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg"
