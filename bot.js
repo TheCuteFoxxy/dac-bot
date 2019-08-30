@@ -95,9 +95,10 @@ message.channel.send({embed});
 if (message.content === prefix + 'links') {
 const embed = {
   "color": 1376511,
+  "timestamp": "2019-08-30T14:11:55.093Z",
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC © 2019; All Rights Reserved | Last Updated:"
+    "text": "DAC © 2019; All Rights Reserved |"
   },
   "thumbnail": {
     "url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg"
