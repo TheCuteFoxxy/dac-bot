@@ -76,7 +76,7 @@ const embed = {
 }
 if (message.content === prefix + 'Insurance') {
 const embed = {
-  "color": 16711910,
+  "color": 1441536,
   "timestamp": "2019-08-30T14:11:55.093Z",
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
