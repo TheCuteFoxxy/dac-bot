@@ -106,7 +106,7 @@ const embed = {
   "fields": [
     {
       "name": "Links",
-      "value": "**Our Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n **Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
+      "value": "**DAC Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n **DRC Invite:** [https://discord.gg/PU4DzxP](https://discord.gg/PU4DzxP) \n\n **Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
     }
   ]
 };
@@ -122,17 +122,17 @@ message.channel.send({embed});
         } else if(message.member.roles.has(staff.id)){
           message.channel.send('Pong!'); message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
         }}
-        if (message.content === prefix + 'avatar') {
-      message.reply(message.author.avatarURL);
-  }
+// if (message.content === prefix + 'avatar') {
+//      message.reply(message.author.avatarURL);
+// }
   if (message.content === prefix + 'help') {
     message.delete(1)
     message.channel.send('Help command currently unavailable')
   }
-if (message.content === prefix + 'ban reasons') {
-  message.delete(1)
-     message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
-}
+// if (message.content === prefix + 'ban reasons') {
+// message.delete(1)
+//     message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
+//}
 if (message.content === prefix + 'everyone') {
   const management = message.guild.roles.get("569313188366123010")
   message.delete(1)
@@ -163,20 +163,26 @@ if (message.content === prefix + 'keygen') {
   message.delete(1)
   message.author.send("Use the following command in <#569320176600743936> to verify. `>DAC-158763`");
 }
-if (message.content === prefix + 'keygen') {
-  message.delete(1)
-  message.channel.send("DAC-158763" || "DAC-429214" || "DAC-789213");
-}
 });
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find(ch => ch.name === 'member-logs');
-  if (!channel) return;
+  const channel1 = member.guild.channels.find(ch => ch.name === 'member-logs');
+  if (!channel1) return;
   channel.send(`${member}` + 'Joined the server.');
 });
 client.on('guildMemberRemove', member => {
-const channel = member.guild.channels.find(ch => ch.name === 'member-logs');
-if (!channel) return;
+const channel1 = member.guild.channels.find(ch => ch.name === 'member-logs');
+if (!channel1) return;
 channel.send(`${member}` + 'Left the server');
+});
+client.on('guildMemberRemove', member => {
+const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
+if (!channel2) return;
+channel.send(`${member}` + 'Left the server');
+});
+client.on('guildMemberAdd', member => {
+  const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
+  if (!channel2) return;
+  channel.send(`${member}` + 'Joined the server.');
 });
 const member = guild.member
 client.on('guildMemberAdd', member => {
