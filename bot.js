@@ -125,15 +125,11 @@ message.channel.send({embed});
         if (message.content === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
   }
-  if (message.content === prefix + 'prq') {
-    message.delete(1)
-    message.channel.send('**Partner Requirements** \n\n Our Partner Requirements \n\n - Server must follow Discord TOS! \n\n - You must have a partner section in your server! \n\n- A member of at least 50 human users are required! \n\n - We do not ping \n\n ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n\n If you agree to our requirements, please DM <@548009285892833280> to request a partnership. (DM\'ing any other staff will result in the denial of a partnership.) \n\n Our partner ad is located in <#569542344353906689>');
-}
   if (message.content === prefix + 'help') {
     message.delete(1)
     message.channel.send('Help command currently unavailable')
   }
-if (message.content === '>ban reasons') {
+if (message.content === prefix + 'ban reasons') {
   message.delete(1)
      message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
 }
@@ -163,9 +159,9 @@ if (message.content === prefix + 'DAC-789213') {
   message.delete(1)
   message.member.addRole("569319986980454400");
 }
-if (message.content === prefix + 'dm') {
+if (message.content === prefix + 'keygen') {
   message.delete(1)
-  message.author.send("DM 1" || "DM 2" || "DM 3");
+  message.author.send("Use the following command in <#569320176600743936> to verify. `>DAC-158763`");
 }
 if (message.content === prefix + 'keygen') {
   message.delete(1)
