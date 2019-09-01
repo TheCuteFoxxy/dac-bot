@@ -174,16 +174,16 @@ const channel1 = member.guild.channels.find(ch => ch.name === 'member-logs');
 if (!channel1) return;
 channel.send(`${member}` + 'Left the server');
 });
-client.on('guildMemberRemove', member => {
-const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
-if (!channel2) return;
-channel.send(`${member}` + 'Left the server');
-});
-client.on('guildMemberAdd', member => {
-  const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
-  if (!channel2) return;
-  channel.send(`${member}` + 'Joined the server.');
-});
+///client.on('guildMemberRemove', member => {
+///const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
+///if (!channel2) return;
+///channel.send(`${member}` + 'Left the server');
+///});
+///client.on('guildMemberAdd', member => {
+///  const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
+///  if (!channel2) return;
+///  channel.send(`${member}` + 'Joined the server.');
+///});
 const member = guild.member
 client.on('guildMemberAdd', member => {
 
