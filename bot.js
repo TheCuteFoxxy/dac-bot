@@ -203,7 +203,6 @@ channel.send(`${member}` + 'Left the server');
 ///  const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
 ///  if (!channel2) return;
 ///  channel.send(`${member}` + 'Joined the server.');
-});
 const member = guild.member
 client.on('guildMemberAdd', member => {
 
