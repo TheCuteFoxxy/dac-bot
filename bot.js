@@ -185,13 +185,13 @@ if (message.content === prefix + 'keygen') {
 }
 });
 client.on('guildMemberAdd', member => {
-  const channel1 = member.guild.channels.find(ch => ch.name === 'member-logs');
-  if (!channel1) return;
+  const channel = member.guild.channels.find(ch => ch.name === 'member-logs');
+  if (!channel) return;
   channel.send(`${member}` + 'Joined the server.');
 });
 client.on('guildMemberRemove', member => {
-const channel1 = member.guild.channels.find(ch => ch.name === 'member-logs');
-if (!channel1) return;
+const channel = member.guild.channels.find(ch => ch.name === 'member-logs');
+if (!channel) return;
 channel.send(`${member}` + 'Left the server');
 });
 ///client.on('guildMemberRemove', member => {
