@@ -52,7 +52,7 @@ const embed = {
   "fields": [
     {
       "name": "Checkpoint",
-      "value": "To Enter the server, input the key you were sent via DMs including the prefix `>`. \n\nIf you did not recieve the DM when you joined please ensure your DMs are enabled and type `>keygen` to generate a new key. \n\n If you did not recieve the key after typing `>keygen` please ping or DM a <@569313321296330767> or <@569356696250482689>. \n\n Please do not ping or DM <@569313188366123010> unless you have been waiting a while and no one has assisted you. \n\n Posting advertisements of any kind in this channel will result in an immediate ban. \n\n\n Thank you for advertising with Discord Advertising Central."
+      "value": "To Enter the server, input the key you were sent via DMs including the prefix `>`. \n\nIf you did not recieve the DM when you joined please ensure your DMs are enabled and type `>keygen` to generate a new key. \n\n If you did not recieve the key after typing `>keygen` please ping or DM a <@&569313321296330767> or <@&569356696250482689>. \n\n Please do not ping or DM <@&569313188366123010> unless you have been waiting a while and no one has assisted you. \n\n Posting advertisements of any kind in this channel will result in an immediate ban. \n\n\n Thank you for advertising with Discord Advertising Central."
     }
   ]
 };
