@@ -181,7 +181,7 @@ if (message.content === prefix + 'DAC-789213') {
 }
 if (message.content === prefix + 'keygen') {
   message.delete(1)
-  message.author.send("Use the following command in <#569320176600743936> to verify. `>DAC-158763`", "Use the following command in <#569320176600743936> to verify. `>DAC-789213`");
+  message.author.send("Use the following command in <#569320176600743936> to verify. `>DAC-158763`");
 }
 });
 client.on('guildMemberAdd', member => {
