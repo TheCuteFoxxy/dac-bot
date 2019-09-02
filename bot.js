@@ -39,6 +39,26 @@ client.on("ready", async () => {
       message.delete(1)
       message.channel.send({embed});
     }      
+if (message.content === prefix + 'checkpoint') {
+const embed = {
+  "color": 16056064,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
+    "text": "DAC 2019; All Rights Reserved"
+  },
+  "image": {
+    "url": "https://cdn.discordapp.com/attachments/553649843550027776/617763440412459018/2019-09-01-10-48-49.jpg"
+  },
+  "fields": [
+    {
+      "name": "Checkpoint",
+      "value": "To Enter the server, input the key you were sent via DMs including the prefix `>`. \n\nIf you did not recieve the DM when you joined please ensure your DMs are enabled and type `>keygen` to generate a new key. \n\n If you did not recieve the key after typing `>keygen` please ping or DM a <@569313321296330767> or <@569356696250482689>. \n\n Please do not ping or DM <@569313188366123010> unless you have been waiting a while and no one has assisted you. \n\n Posting advertisements of any kind in this channel will result in an immediate ban. \n\n\n Thank you for advertising with Discord Advertising Central."
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
 if (message.content === prefix + 'ad rights') {
 const embed = {
   "color": 16711910,
@@ -55,7 +75,7 @@ const embed = {
   ]
 };
 message.delete(1)
-message.channel.send({ embed });
+message.channel.send({embed});
   }
 if  (message.content === prefix + 'partner req') {
 const embed = {
