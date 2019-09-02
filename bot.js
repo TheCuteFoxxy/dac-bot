@@ -1,4 +1,4 @@
-///Version 1.2.1
+///Version 1.2.2
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -43,8 +43,8 @@ if (message.content === prefix + 'checkpoint') {
 const embed = {
   "color": 16056064,
   "footer": {
-    "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
-    "text": "DAC 2019; All Rights Reserved"
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
   },
   "image": {
     "url": "https://cdn.discordapp.com/attachments/553649843550027776/617763440412459018/2019-09-01-10-48-49.jpg"
