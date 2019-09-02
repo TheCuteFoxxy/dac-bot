@@ -161,7 +161,7 @@ if (message.content === prefix + 'DAC-789213') {
 }
 if (message.content === prefix + 'keygen') {
   message.delete(1)
-  message.author.send("Use the following command in <#569320176600743936> to verify. `>DAC-158763`");
+  message.author.send("Use the following command in <#569320176600743936> to verify. `>DAC-158763`", "Use the following command in <#569320176600743936> to verify. `>DAC-789213`");
 }
 });
 client.on('guildMemberAdd', member => {
@@ -183,7 +183,7 @@ channel.send(`${member}` + 'Left the server');
 ///  const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
 ///  if (!channel2) return;
 ///  channel.send(`${member}` + 'Joined the server.');
-///});
+});
 const member = guild.member
 client.on('guildMemberAdd', member => {
 
