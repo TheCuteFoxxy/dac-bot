@@ -112,6 +112,23 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
 }
+if (message.content === prefix + 'links set 2') {
+const embed = {
+  "color": 16711680,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Links",
+      "value": "\n**DAC Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n**DRC Invite:** [https://discord.gg/PU4DzxP](https://discord.gg/PU4DzxP) \n\n**DAC Directory Invite:** [https://discord.gg/aGwSvCw](https://discord.gg/aGwSvCw)"
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
 if (message.content === prefix + 'links') {
 const embed = {
   "color": 1376511,
@@ -127,23 +144,6 @@ const embed = {
     {
       "name": "Links",
       "value": "**DAC Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n **DRC Invite:** [https://discord.gg/PU4DzxP](https://discord.gg/PU4DzxP) \n\n **Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
-    }
-  ]
-};
-message.delete(1)
-message.channel.send({embed});
-
-if (message.content === prefix + 'links set 2`) {
-const embed = {
-  "color": 16711680,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC © 2019; All Rights Reserved"
-  },
-  "fields": [
-    {
-      "name": "Links",
-      "value": "\n**DAC Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n**DRC Invite:** [https://discord.gg/PU4DzxP](https://discord.gg/PU4DzxP) \n\n**DAC Directory Invite:** [https://discord.gg/aGwSvCw](https://discord.gg/aGwSvCw)"
     }
   ]
 };
