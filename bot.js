@@ -59,6 +59,23 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
   }
+if (message.content === prefix + 'listed servers') {
+const embed = {
+  "color": 5631,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Become Listed",
+      "value": "To become a listed server you must meet the following requirements. \n\n\n - Have at least **100** members in your server \n\n - Follow all Discord [Terms Of Service](https://www.discordapp.com/terms) and [Community Guidelines](https://discordapp.com/guidelines) \n\n - Must be an advertising/listing server \n\n - DAC Management Must be able to join\n\n - Server and Server Owner can not be blacklisted \n\n\n *These requirements are subject to change*."
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
 if (message.content === prefix + 'ad rights') {
 const embed = {
   "color": 16711910,
