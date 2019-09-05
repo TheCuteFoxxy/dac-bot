@@ -59,6 +59,23 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
   }
+if (message.content === prefix + 'blacklist') {
+const embed = {
+  "color": 16711680,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "⛔ Blacklist ⛔",
+      "value": "Servers listed here have been added to the DAC Blacklist. Servers can end up on the blacklist for the following reasons. \n\n - Discord [Terms Of Service](https://www.discordapp.com/terms) Violations \n\n - Raidng/Hacking \n\n - Ads containing malicious links \n\n - Banning users without reason (Abuse of power/Impulsive bans) \n\n - Extreme Toxicity\n\n - Breaking Laws\n\n - False Advertising \n\n\n *This list is subject to change and the staff of DAC reserve the right to blacklist servers at their discretion.* "
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
 if (message.content === prefix + 'listed servers') {
 const embed = {
   "color": 5631,
