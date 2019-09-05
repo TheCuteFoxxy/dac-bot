@@ -69,7 +69,7 @@ const embed = {
   "fields": [
     {
       "name": "Become Listed",
-      "value": "To become a listed server you must meet the following requirements. \n\n\n - Have at least **100** members in your server \n\n - Follow all Discord [Terms Of Service](https://www.discordapp.com/terms) and [Community Guidelines](https://discordapp.com/guidelines) \n\n - Must be an advertising/listing server \n\n - DAC Management Must be able to join\n\n - Server and Server Owner can not be blacklisted \n\n\n Apply [here](https://forms.gle/KXytSHBeApYMExKC7) to become a Listed Server *These requirements are subject to change*."
+      "value": "To become a listed server you must meet the following requirements. \n\n\n - Have at least **100** members in your server \n\n - Follow all Discord [Terms Of Service](https://www.discordapp.com/terms) and [Community Guidelines](https://discordapp.com/guidelines) \n\n - Must be an advertising/listing server \n\n - DAC Management Must be able to join\n\n - Server and Server Owner can not be blacklisted \n\n\n Apply [here](https://forms.gle/KXytSHBeApYMExKC7) to become a Listed Server\n\n\n *These requirements are subject to change*."
     }
   ]
 };
