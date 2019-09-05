@@ -1,4 +1,4 @@
-///Version 1.2.2
+///Version 1.2.3
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -132,8 +132,25 @@ const embed = {
 };
 message.delete(1)
 message.channel.send({embed});
+
+if (message.content === prefix + 'links set 2`) {
+const embed = {
+  "color": 16711680,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Links",
+      "value": "\n**DAC Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n**DRC Invite:** [https://discord.gg/PU4DzxP](https://discord.gg/PU4DzxP) \n\n**DAC Directory Invite:** [https://discord.gg/aGwSvCw](https://discord.gg/aGwSvCw)"
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
 }
-    if (message.content === prefix + 'ping') {
+ if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313373720674315")
         message.delete(1)
         if(!message.member.roles.has(staff.id)){
