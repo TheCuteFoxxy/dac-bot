@@ -1,4 +1,4 @@
-///Version 1.2.3
+///Version 1.2.4
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -184,6 +184,60 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
 }
+if (message.content === prefix + 'services 1')  {
+const embed = {
+  "color": 16738816,
+  "timestamp": "2019-09-17T19:38:02.421Z",
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Services",
+      "value": "DAC Offers many services for our members, both free and premium. Some of our services include: \n\n - General tips and tricks questions on how to grow and maintain your server \n - Server security check on how to take proper measures on how to make sure your server is safe from raids and attacks \n - Server facelift feedback on how to improve your server, organize channels, roles, etc. and make it look appealing to your members \n - Ad reviews on expert advice about how to make a great looking ad for your server \n\n ```Tips N' Tricks``` \n\n Our <#623605342886035506>  channel is for you to look at and there will be things in there that will help you grow your server and gain members and keep them. It is very useful and can be effective if done right. If you have any additional questions to ask our Growth Assistants, you can ask away in <#623603525053841448>. \n\n Some of the General Tips are: \n - Channel Organisation \n - Role Tips \n - Growing server and activity \n - How to be more professional \n - Layout and etc \n\n"
+    }
+  ]
+};
+    message.delete(1)
+message.channel.send({embed});
+  }
+if (message.content === prefix + 'services 2') {
+const embed = {
+  "color": 16738816,
+  "timestamp": "2019-09-17T19:49:29.886Z",
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Services",
+      "value": "```Server Security Check```Want to put your server security to the test? Participate in a Server Security Check and one of our vetted staff will join your server and put your security to the test. You may request a Server Security check by requesting a **Server Security Check** in <#571490532061216768> and a staff member will join when they can and let you know and give you advice on what to do. They will be helping you with on what to add for example bots, verification, staff and etc. This will help prevent nukes and raids. \n ```Server Facelift Feedback```For a server facelift feedback, ask for **Server Facelift Feedback** in <#623603525053841448> and a Growth Team member will join your server to review it and give you feedback on what to change and improve. The Growth Assistance team with help with additional tips and ways to help the server in any possible way."
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
+if (message.content === prefix + 'services 3') {
+const embed = {
+  "color": 16738816,
+  "timestamp": "2019-09-17T19:57:30.292Z",
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Services",
+      "value": "```Ad Review``` \nWant feedback on your server ad? Request an **Ad Review** in <#623603525053841448> This service is for our team to give expert advice on your ad since it is the first thing people will see when looking at your server and you want it to look very good. Our team will give you ideas and ways on how to improve your ad to attract more people to your server in the best way possible. \n ```Join Our Team``` Want to join our Growth Experts, team? Apply in <#569533387979882496> today!"
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
  if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313373720674315")
         message.delete(1)
