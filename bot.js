@@ -222,6 +222,12 @@ if (message.content === prefix + 'DAC-158763') {
   message.delete(1)
   message.member.addRole("569319986980454400");
 }
+// Ban a guild member - Stability: Unknown
+if (message.content === prefix + 'ban') {
+member.ban(7)
+  .then(() => console.log(`Banned ${member.displayName}`))
+  .catch(console.error);
+  }
 if (message.content === prefix + 'DAC-429214') {
   message.delete(1)
   message.member.addRole("569319986980454400");
