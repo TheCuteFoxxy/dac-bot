@@ -121,7 +121,7 @@ const embed = {
   "fields": [
     {
       "name": "Our Partnership Requirements",
-      "value": "\n- Server **must** follow Discord TOS!  \n\n - You must have a partner section in your server! \n\n - A member of at least 50 human users are required! \n\n - We do not ping \n\n  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n\n  If you agree to our requirements, please DM <@548009285892833280> to request a partnership. (DM'ing any other staff will result in the denial of a partnership.) \n\n Our partner ad is located in <#569542344353906689>"
+      "value": "\n- Server **must** follow Discord TOS!  \n\n - You must have a partner section in your server! \n\n - A member of at least 50 human users are required! \n\n - We do not ping \n\n  ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ \n\n  If you agree to our requirements, please DM a **Partner Manager** to request a partnership. (DM'ing any other staff will result in the denial of a partnership.) \n\n Our partner ad is located in <#569542344353906689>"
     }
   ]
 };
