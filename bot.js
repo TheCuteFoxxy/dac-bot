@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
 const prefix = ">"
-const guild = "569304035472179200"
+const guild = "569304035472179200", "571870208185335848"
 
 
 client.on('ready', () => {
