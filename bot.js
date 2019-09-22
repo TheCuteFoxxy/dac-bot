@@ -3,7 +3,8 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
 const prefix = ">"
-const guild = "569304035472179200", "571870208185335848"
+const guild = "569304035472179200"
+const secondary_guild = "571870208185335848"
 
 
 client.on('ready', () => {
@@ -255,13 +256,13 @@ message.channel.send({embed});
     message.channel.send('Help command currently unavailable')
   }
 if (message.content === prefix + 'hire test') {
-      const user = message.guild.member(messsage.mentions.users.first());
-      const channel01 = message.guild.channels.get("590558058715807768");
-      const channel02 = message.guild.channels.get("590363890534187026");
+      const user = message.secondary_guild.member(messsage.mentions.users.first());
+      const channel01 = message.secondary_guild.channels.get("590558058715807768");
+      const channel02 = message.secondary_guild.channels.get("590363890534187026");
       
       
       channel01.send(`Welcome ${user} to the Moderation Team, please review <#590558383023587349> for information to help you in your position.`).then(user.addRole("625133461971140609"))
-      channel02.send(`${user} was hired as a **Test** by ${message.author}`)
+      channel02.send(`${user} was hired as a **Test** by ${message.author} on/at ${message.createdAt}`)
   
 }
 // if (message.content === prefix + 'ban reasons') {
