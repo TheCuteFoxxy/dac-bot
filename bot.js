@@ -266,6 +266,12 @@ if (message.content === prefix + 'hire test') {
       channel02.send(`${user} was hired as a **Test** by ${message.author} on/at ${message.createdAt}`)
   
 }
+if (message.content === prefix + 'test') {
+    const user = message.secondary_guild.member(messsage.mentions.users.first());
+    const test001 = message.guild.channels.get("625142396937830410");
+  
+    test001.send(`Testing mentions defined ${user}`)
+  }
 // if (message.content === prefix + 'ban reasons') {
 // message.delete(1)
 //     message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
