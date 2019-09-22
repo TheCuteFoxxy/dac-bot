@@ -261,7 +261,7 @@ if (message.content === 'kill me') {
 }
 if (message.content === prefix + 'test') {
 message.delete(1)
-    const secondary_guild = "571870208185335848"
+    const secondary_guild = client.guilds.get("571870208185335848");
     const user = message.secondary_guild.member(messsage.mentions.users.first());
     const test001 = message.secondary_guild.channels.get("625142396937830410");
   
