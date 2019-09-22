@@ -1,4 +1,4 @@
-///Version 1.2.4
+///Version 1.2.5
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -254,6 +254,16 @@ message.channel.send({embed});
     message.delete(1)
     message.channel.send('Help command currently unavailable')
   }
+if (message.content === prefix + 'hire test') {
+      const user = message.guild.member(messsage.mentions.users.first());
+      const channel01 = message.guild.channels.get("590558058715807768");
+      const channel02 = message.guild.channels.get("590363890534187026");
+      
+      
+      channel01.send(`Welcome ${user} to the Moderation Team, please review <#590558383023587349> for information to help you in your position.`).then(user.addRole("625133461971140609"))
+      channel02.send(`${user} was hired as a **Test** by ${message.author}`)
+  
+}
 // if (message.content === prefix + 'ban reasons') {
 // message.delete(1)
 //     message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
