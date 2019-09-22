@@ -267,8 +267,9 @@ if (message.content === prefix + 'hire test') {
   
 }
 if (message.content === prefix + 'test') {
+    const secondary_guild = "571870208185335848"
     const user = message.secondary_guild.member(messsage.mentions.users.first());
-    const test001 = message.guild.channels.get("625142396937830410");
+    const test001 = message.secondary_guild.channels.get("625142396937830410");
   
     test001.send(`Testing mentions defined ${user}`)
   }
