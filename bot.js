@@ -255,8 +255,8 @@ message.channel.send({embed});
     message.delete(1)
     message.channel.send('Help command currently unavailable')
   }
-if (message.content === prefix + 'hire-test') {
       const user = message.secondary_guild.member(messsage.mentions.users.first());
+if (message.content === prefix + 'hiretest' + `${user}`) {
       const channel01 = message.secondary_guild.channels.get("590558058715807768");
       const channel02 = message.secondary_guild.channels.get("590363890534187026");
       
