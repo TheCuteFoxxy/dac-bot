@@ -256,7 +256,7 @@ message.channel.send({embed});
     message.channel.send('Help command currently unavailable')
   }
 if (message.content === 'kill me') {
-  message.channel.send(`*kills ${message.author}`)
+  message.channel.send(`*kills ${message.author}*`)
   message.delete(1)
 }
 if (message.content === prefix + 'test') {
