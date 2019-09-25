@@ -19,6 +19,7 @@ client.on("ready", async () => {
           client.user.setStatus(`online`);
        }, 10000)
   });
+// Embed Commands
   client.on('message', message => {
     if  (message.content === prefix + 'test embed') {
       const embed = {
@@ -239,6 +240,24 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
   }
+if (message.content === prefix + 'listed servers') {
+const embed = {
+  "color": 5631,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC Premium List"
+  },
+  "fields": [
+    {
+      "name": "Premium Key Holders",
+      "value": " Key Holder List \n\n<@548009285892833280> - Lifetime (Issued 09/25/2019) \n\n<@293841631583535106> - Lifetime (Issued 09/23/2019)"
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
+// Normal Commands
  if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313373720674315")
         message.delete(1)
@@ -333,6 +352,8 @@ channel.send(`${member}` + 'Left the server');
 ///  const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
 ///  if (!channel2) return;
 ///  channel.send(`${member}` + 'Joined the server.');
+
+// Welcome Message
 const member = guild.member
 client.on('guildMemberAdd', member => {
 
