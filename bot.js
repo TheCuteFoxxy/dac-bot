@@ -349,7 +349,7 @@ const member = guild.member
 client.on('guildMemberAdd', member => {
 
 member.send(`Welcome ${member} to **Discord Advertising Central**! Please read <#569325072230252546> and <#569341867863441413> for the server rules and advertising guidelines. If you at any time need some help, you can send a message to <@546661574182436864> and a staff member will be glad to assist you! \n\nIf you want to partner, head on over to <#569542837415182343> and read that then ping or DM a Partner Manager and they will guide you from there.\n\nYou can get some roles in <#569335136441729039>.\n\nIf you wish to try out our custom services then head over to <#569539946180771856> \n\n__If you leave the server, all your advertisements will be deleted!__\nThanks for joining!`  +  '\n\n To be verified type  `>DAC-429214`' + ` in <#569320176600743936>`)
-
+}
 
   
     });
