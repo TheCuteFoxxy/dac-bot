@@ -242,10 +242,11 @@ message.channel.send({embed});
   }
 const management = message.guild.roles.get("569313224869281816")
   message.delete(1)
-  if(!message.member.roles.has(management.id)){
+if (message.content === prefix + 'whois premium') {
+    if(!message.member.roles.has(management.id)){
       message.channel.send ('You must be Management to use this command!')
       return;
-if (message.content === prefix + 'whois premium') {
+} else if(message.member.roles.has(management.id)){
 const embed = {
   "color": 5631,
   "footer": {
@@ -259,7 +260,6 @@ const embed = {
     }
   ]
 };
-} else if(message.member.roles.has(management.id)){
 message.channel.send({embed});
   }
 // Normal Commands
