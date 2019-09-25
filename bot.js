@@ -240,7 +240,13 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
   }
-if (message.content === prefix + 'listed servers') {
+const management = message.guild.roles.get("569313224869281816")
+  message.delete(1)
+  if(!message.member.roles.has(management.id)){
+      message.channel.send ('You must be Management to use this command!')
+      return;
+if (message.content === prefix + 'whois premium') {
+} else if(message.member.roles.has(management.id)){
 const embed = {
   "color": 5631,
   "footer": {
@@ -315,11 +321,11 @@ if (message.content === prefix + 'DAC-158763') {
   message.member.addRole("569319986980454400");
 }
 // Ban a guild member - Stability: Unknown
-if (message.content === prefix + 'ban') {
-member.ban(7)
-  .then(() => console.log(`Banned ${member.displayName}`))
-  .catch(console.error);
-  }
+//if (message.content === prefix + 'ban') {
+//member.ban(7)
+//  .then(() => console.log(`Banned ${member.displayName}`))
+//  .catch(console.error);
+//  }
 if (message.content === prefix + 'DAC-429214') {
   message.delete(1)
   message.member.addRole("569319986980454400");
