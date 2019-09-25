@@ -4,7 +4,10 @@ const client = new Discord.Client();
 const auth = require("./auth.json");
 const prefix = ">"
 const guild = "569304035472179200"
+const Sentry = require('@sentry/node');
 
+
+Sentry.init({ dsn: 'https://0e1781ef78e742e8b141f3012654508c@sentry.io/1761623' });
 
 
 client.on('ready', () => {
