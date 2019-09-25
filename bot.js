@@ -260,7 +260,7 @@ const embed = {
     }
   ]
 };
-message.delete(1)
+} else if(message.member.roles.has(management.id)){
 message.channel.send({embed});
   }
 // Normal Commands
