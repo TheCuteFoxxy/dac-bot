@@ -255,7 +255,7 @@ const embed = {
   "fields": [
     {
       "name": "Premium Key Holders",
-      "value": " Key Holder List \n\n<@548009285892833280> - Lifetime (Issued 09/25/2019) \n\n<@293841631583535106> - Lifetime (Issued 09/23/2019)"
+      "value": " Key Holder List \n\n<@548009285892833280> - Lifetime (Issued 09/25/2019) \n\n<@293841631583535106> - Lifetime (Issued 09/23/2019) \n\n<@334840635775254528> - Lifetime (Issued 09/23/2019)"
     }
   ]
 };
