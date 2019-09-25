@@ -19,6 +19,7 @@ client.on("ready", async () => {
           client.user.setStatus(`online`);
        }, 10000)
   });
+Sentry.init({ dsn: 'https://0e1781ef78e742e8b141f3012654508c@sentry.io/1761623' });
 // Embed Commands
   client.on('message', message => {
     if  (message.content === prefix + 'test embed') {
