@@ -263,6 +263,7 @@ const embed = {
 message.channel.send({embed});
   }
 // Normal Commands
+  client.on('message', message => {
  if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313373720674315")
         message.delete(1)
