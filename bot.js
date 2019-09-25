@@ -332,6 +332,7 @@ if (message.content === prefix + 'keygen') {
   message.delete(1)
   message.author.send("Use the following command in <#569320176600743936> to verify. `>DAC-158763`");
 }
+  }
 });
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === 'member-logs');
