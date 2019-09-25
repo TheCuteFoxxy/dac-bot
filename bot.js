@@ -292,10 +292,10 @@ if (message.content === 'kill me') {
 //  
 //    test001.send(`Testing mentions defined ${user}`)
 // }
-// if (message.content === prefix + 'ban reasons') {
-// message.delete(1)
-//     message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
-//}
+ if (message.content === prefix + 'ban reasons') {
+ message.delete(1)
+     message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
+}
     
     //Lifetime Premium Key
 if (message.content === prefix + 'DAC-Premium-461234') {
@@ -320,12 +320,6 @@ if (message.content === prefix + 'DAC-158763') {
   message.delete(1)
   message.member.addRole("569319986980454400");
 }
-// Ban a guild member - Stability: Unknown
-//if (message.content === prefix + 'ban') {
-//member.ban(7)
-//  .then(() => console.log(`Banned ${member.displayName}`))
-//  .catch(console.error);
-//  }
 if (message.content === prefix + 'DAC-429214') {
   message.delete(1)
   message.member.addRole("569319986980454400");
@@ -349,15 +343,6 @@ const channel = member.guild.channels.find(ch => ch.name === 'member-logs');
 if (!channel) return;
 channel.send(`${member}` + 'Left the server');
 });
-///client.on('guildMemberRemove', member => {
-///const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
-///if (!channel2) return;
-///channel.send(`${member}` + 'Left the server');
-///});
-///client.on('guildMemberAdd', member => {
-///  const channel2 = member.guild.channels.find(ch => ch.name === 'join-leave-logs');
-///  if (!channel2) return;
-///  channel.send(`${member}` + 'Joined the server.');
 
 // Welcome Message
 const member = guild.member
