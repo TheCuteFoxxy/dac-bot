@@ -246,7 +246,6 @@ const management = message.guild.roles.get("569313224869281816")
       message.channel.send ('You must be Management to use this command!')
       return;
 if (message.content === prefix + 'whois premium') {
-} else if(message.member.roles.has(management.id)){
 const embed = {
   "color": 5631,
   "footer": {
