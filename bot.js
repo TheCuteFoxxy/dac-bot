@@ -261,7 +261,8 @@ const embed = {
 };
   message.delete(1)
 message.channel.send({embed});
-  }
+}}
+});
 // Normal Commands
   client.on('message', message => {
  if (message.content === prefix + 'ping') {
@@ -296,7 +297,7 @@ if (message.content === 'kill me') {
  message.delete(1)
      message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
 }
-    
+
     //Lifetime Premium Key
 if (message.content === prefix + 'DAC-Premium-461234') {
   message.delete(1)
@@ -322,7 +323,6 @@ if (message.content === prefix + 'keygen') {
   message.delete(1)
   message.author.send("Use the following command in <#569320176600743936> to verify. `>DAC-158763`");
 }
-  }
 });
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === 'member-logs');
