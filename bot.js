@@ -240,7 +240,7 @@ message.delete(1)
 message.channel.send({embed});
   }
 if (message.content === prefix + 'whois premium') {
-if(message.channel.type =='dm') return
+if(message.channel.type =='dm') return;
 const management = message.guild.roles.get("569313224869281816")
     if(!message.member.roles.has(management.id)){
       message.channel.send ('You must be Management to use this command!')
