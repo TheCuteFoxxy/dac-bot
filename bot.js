@@ -241,7 +241,6 @@ message.delete(1)
 message.channel.send({embed});
   }
 const management = message.guild.roles.get("569313224869281816")
-  message.delete(1)
 if (message.content === prefix + 'whois premium') {
     if(!message.member.roles.has(management.id)){
       message.channel.send ('You must be Management to use this command!')
@@ -260,6 +259,7 @@ const embed = {
     }
   ]
 };
+  message.delete(1)
 message.channel.send({embed});
   }
 // Normal Commands
