@@ -248,9 +248,9 @@ message.channel.send({embed});
         } else if(message.member.roles.has(staff.id)){
           message.channel.send('Pong!'); message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
         }}
-// if (message.content === prefix + 'avatar') {
-//      message.reply(message.author.avatarURL);
-// }
+ if (message.content === prefix + 'avatar') {
+      message.reply(message.author.avatarURL);
+ }
   if (message.content === prefix + 'help') {
     message.delete(1)
     message.channel.send('Help command currently unavailable')
@@ -271,6 +271,12 @@ if (message.content === 'kill me') {
 // message.delete(1)
 //     message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
 //}
+    
+    //Lifetime Premium Key
+if (message.content === prefix + 'DAC-Premium-461234') {
+  message.delete(1)
+  message.member.addRole("625700940770574337");
+}
 if (message.content === prefix + 'everyone') {
   const management = message.guild.roles.get("569313188366123010")
   message.delete(1)
