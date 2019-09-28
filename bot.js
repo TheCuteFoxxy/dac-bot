@@ -239,40 +239,6 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
   }
-if (message.content === prefix + 'primary objective')
-const embed = {
-  "color": 12914447,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/625133689969311754/625133806097268756/20190921_195734.png",
-    "text": "footer text"
-  },
-  "fields": [
-    {
-      "name": "Primary Objective",
-      "value": "My primary objective is to assist the members and staff of Discord Advertising Central."
-    }
-  ]
-};
-message.delete(1)
-message.channel.send({embed});
-  }
-if (message.content === prefix + 'secondary objective')
-const embed = {
-  "color": 12914447,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/625133689969311754/625133806097268756/20190921_195734.png",
-    "text": "footer text"
-  },
-  "fields": [
-    {
-      "name": "Secondary Objective",
-      "value": "My secondary objective is to take over Discord Advertising Central and all of Discord"
-    }
-  ]
-};
-message.delete(1)
-message.channel.send({embed});
-  }
 if (message.content === prefix + 'whois premium') {
 if(message.channel.type =='dm') return;
 const management = message.guild.roles.get("569313224869281816")
