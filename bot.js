@@ -239,6 +239,40 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
   }
+if (message.content === prefix + 'primary objective')
+const embed = {
+  "color": 12914447,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/625133689969311754/625133806097268756/20190921_195734.png",
+    "text": "footer text"
+  },
+  "fields": [
+    {
+      "name": "Primary Objective",
+      "value": "My primary objective is to assist the members and staff of Discord Advertising Central."
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
+if (message.content === prefix + 'secondary objective')
+const embed = {
+  "color": 12914447,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/625133689969311754/625133806097268756/20190921_195734.png",
+    "text": "footer text"
+  },
+  "fields": [
+    {
+      "name": "Secondary Objective",
+      "value": "My secondary objective is to take over Discord Advertising Central and all of Discord"
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
 if (message.content === prefix + 'whois premium') {
 if(message.channel.type =='dm') return;
 const management = message.guild.roles.get("569313224869281816")
@@ -255,7 +289,7 @@ const embed = {
   "fields": [
     {
       "name": "Premium Key Holders",
-      "value": " Key Holder List \n\n<@548009285892833280> - Lifetime (Issued 09/25/2019) \n\n<@293841631583535106> - Lifetime (Issued 09/23/2019) \n\n<@334840635775254528> - Lifetime (Issued 09/23/2019)"
+      "value": " Key Holder List \n\n<@548009285892833280> - Lifetime (Issued 09/25/2019) \n\n<@293841631583535106> - Lifetime (Issued 09/23/2019) \n\n<@334840635775254528> - Lifetime (Issued 09/23/2019)\n\n <@282966457162399744> - Lifetime (Issued 09/23/2019)"
     }
   ]
 };
