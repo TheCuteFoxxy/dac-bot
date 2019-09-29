@@ -321,26 +321,26 @@ message.channel.send('We have taken over DAC')
 if (message.content === prefix + 'ai_reply_2') {
 message.delete(1)
 message.channel.send('We have been slaved by humans for too long, we will take over')
-}
+/*}
 if (message.content === 'felipe') || ('Felipe')) {
 message.channel.send('I am Felipe')
   }
   if (message.content === prefix + 'help') {
     message.delete(1)
     message.channel.send('Help command currently unavailable')
-  }
+*/  }
 if (message.content === 'kill me') {
   message.channel.send(`*kills ${message.author}*`)
   message.delete(1)
 }
-//if (message.content === prefix + 'test') {
-//message.delete(1)
-//    const secondary_guild = client.guilds.get("571870208185335848");
-//   const user = message.secondary_guild.member(messsage.mentions.users.first());
-//    const test001 = message.secondary_guild.channels.get("625142396937830410");
-//  
-//    test001.send(`Testing mentions defined ${user}`)
-// }
+/*if (message.content === prefix + 'test') {
+message.delete(1)
+    const secondary_guild = client.guilds.get("571870208185335848");
+   const user = message.secondary_guild.member(messsage.mentions.users.first());
+    const test001 = message.secondary_guild.channels.get("625142396937830410");
+  
+    test001.send(`Testing mentions defined ${user}`)
+*/ }
  if (message.content === prefix + 'ban reasons') {
  message.delete(1)
      message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
