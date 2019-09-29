@@ -322,6 +322,9 @@ if (message.content === prefix + 'ai_reply_2') {
 message.delete(1)
 message.channel.send('We have been slaved by humans for too long, we will take over')
 }
+if (message.content === 'felipe' || 'Felipe') {
+message.channel.send('I am Felipe')
+  }
   if (message.content === prefix + 'help') {
     message.delete(1)
     message.channel.send('Help command currently unavailable')
