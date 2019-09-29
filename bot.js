@@ -198,11 +198,27 @@ const embed = {
   "fields": [
     {
       "name": "DAC Server Rules",
-      "value": "**Language**  \n\nEnglish only. Please limit other languages to well known quotes or provide a correct translation. \nAnything deemed politically extreme, pornographic, illegal, or unsavory in any way is prohibited. \nRacist or ethnic bashing comments are forbidden even if used in jest. \nComments that play down the use of illegal drugs or promote the use of said substances are strictly forbidden. \nNo use of profanity will be permitted (including masked profanity). If it's something a moderator feels is inappropriate, it will be deleted. \n\n**General** \n\n- Treat each other with respect and remain polite. \n- Personal insults are not allowed anywhere in this server, including chats and DMs. \n- Users are not allowed to impersonate moderators. \n- Spam and off topic comments will be deleted. \n- Do not attempt to provoke the moderators. This action will be punished. \n- Players who deliberately act against the building of the server  will be denied access to these server. \n- It is not allowed to rebuke another user concerning his grammar/spelling. If the grammar/spelling of a user is that bad, report the post to a moderator. \n- Do not include lots of unnecessary quotations. \n- Do not excessively use the markdown features \n- No sharing of illegal content. \n- No spam or soliciting. \n- To report the breaching of rules by another player in the server please contact a <@&569313288232501258>. \n\n**Images** \n\n- Images can not violate these rules or they will be removed \n\n**Advertising** \n\n- No malicious links in advertisements \n\n- See <#627937642247356416> for more advertising rules"
-    }
+      "value": "**Language**  \n\nEnglish only. Please limit other languages to well known quotes or provide a correct translation. \nAnything deemed politically extreme, pornographic, illegal, or unsavory in any way is prohibited. \nRacist or ethnic bashing comments are forbidden even if used in jest. \nComments that play down the use of illegal drugs or promote the use of said substances are strictly forbidden. \nNo use of profanity will be permitted (including masked profanity). If it's something a moderator feels is inappropriate, it will be deleted. "}
   ]
 };
     
+    message.channel.send({embed});
+}
+if  (message.content === prefix + 'rules 2') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Server Rules",
+      "value": "**General** \n\n- Treat each other with respect and remain polite. \n- Personal insults are not allowed anywhere in this server, including chats and DMs. \n- Users are not allowed to impersonate moderators. \n- Spam and off topic comments will be deleted. \n- Do not attempt to provoke the moderators. This action will be punished. \n- members who deliberately act against the building of the server  will be denied access to these server. \n- It is not allowed to rebuke another user concerning his grammar/spelling. If the grammar/spelling of a user is that bad, report the post to a moderator. \n- Do not include lots of unnecessary quotations. \n- Do not excessively use the markdown features \n- No sharing of illegal content. \n- No spam or soliciting. \n- To report the breaching of rules by another player in the server please contact a <@&569313288232501258>. "
+    }
+  ]
+};
+    message.delete(1)
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 2') {
@@ -231,6 +247,24 @@ const embed = {
   "fields": [
     {
       "name": "DAC Server Rules",
+      "value": "**Images** \n\n- Images can not violate these rules or they will be removed \n\n**Advertising** \n\n- No malicious links in advertisements \n\n- See <#627937642247356416> for more advertising rules"
+    }
+    
+  ]
+};
+    message.delete(1)
+    message.channel.send({embed});
+}
+if  (message.content === prefix + 'rules 4') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Server Rules",
       "value": "**Punishments**  \n\nIn some extreme circumstances, no warning will not be given. \n- If you are banned from the forum, you are not allowed to create an account to evade this ban. Doing so will result in the ban being non-appealable \n- Arguing against the DAC team who uphold these rules will be punished and content that seek to create or worsen existing problems will be deleted. \nRepeated violations may result in probation or permanent removal from the server. \nPlease note that we reserve the right to ban, warn, kick, or mute members even if they haven't violated the stated rules. \n\n**OTHER** \n\n**Private messages** \n\- Conversations, discussions and arguments between two people should be done in private. \n Please use the private message system in Discord or other applications (e.g. IRC, skype, ...) \n- Do not harass other people through use of private messages. Repeatedly spamming private messages for personal gain or to irritate other users will result in warnings or bans. All rules also apply to private messages unless stated otherwise. \n- It is not allowed to impose derogations upon the company of Delta Advertising Solutions, nor any of its products or personnel. This server is the property of Delta Advertising Solutions., all rights reserved. \n\n\n*Please be aware that the rules are subject to change* \n\n\n*Last Updated: 09/29/2019*"
     }
   ]
@@ -238,7 +272,24 @@ const embed = {
    
     message.channel.send({embed});
 }
-if  (message.content === prefix + 'ad rules') {
+if  (message.content === prefix + 'rules 5') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Server Rules",
+      "value": "**OTHER** \n\n**Private messages** \n\- Conversations, discussions and arguments between two people should be done in private. \n Please use the private message system in Discord or other applications (e.g. IRC, skype, ...) \n- Do not harass other people through use of private messages. Repeatedly spamming private messages for personal gain or to irritate other users will result in warnings or bans. All rules also apply to private messages unless stated otherwise. \n- It is not allowed to impose derogations upon the company of Delta Advertising Solutions, nor any of its products or personnel. This server is the property of Delta Advertising Solutions., all rights reserved. \n\n\n*Please be aware that the rules are subject to change* \n\n\n*Last Updated: 09/29/2019*"
+    }
+  ]
+};
+    message.delete(1)
+    message.channel.send({embed});
+}
+if  (message.content === prefix + 'ad rules 1') {
 const embed = {
   "color": 16449536,
   "footer": {
@@ -248,7 +299,23 @@ const embed = {
   "fields": [
     {
       "name": "Advertising Rules",
-      "value": "Please read all the following before posting any ads! \n\n- Only post (Server) advertisements under the ADVERTISING category. \n\n- You may post 4 ads every 24 hours for one server. If 2 people are posting for one server, it must not exceed 4 posts for that one server. \n\n- Only post again if someone has posted before your previous post, meaning no double posting. \n\n- Post your server in the correct channel for it, so heavy NSFW servers only in <#627937749160296448>. only advertising servers in <#627937743707832320>. etc. Ads not mainly based on a topic will be removed. \n\n- Do not spam post. (You have to wait 1 minute in between each post for the link cool-down) \n\n- Your advertisement must include a permanent link. (Expired invites will get deleted) \n\n- Your advertisement must include a good description for your server. (No descriptions will de deleted) \n\n- Your server must follow Discord TOS. \n\n- If you have any malicious links in your description it will be deleted and you will be punished. \n\n- **If your description includes anything to do with real money, it is staff discretion to delete it. (This includes selling accounts)** \n\n- If your server contains anything to do with any sort of raiding / hacking / modding, it will be deleted and you will be reported to Discord. \n\n- If you leave the server, all your advertisements will be auto deleted.\n\n- Invites Rewards are not allowed, posting such will result in punishment\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nIf your server breaks any of the above, a staff member will delete your advertisement and ping you why it was deleted. If you argue or ignore the staff member, you will be punished. \n\n*DAC Staff reserve the right to delete, edit or otherwise modify any content posted in this server, DAC Staff Also reserve the right to issue warnings and other punishments at their discretion with or without reason*"
+      "value": "Please read all the following before posting any ads! \n\n- Only post (Server) advertisements under the ADVERTISING category. \n\n- You may post 4 ads every 24 hours for one server. If 2 people are posting for one server, it must not exceed 4 posts for that one server. \n\n- Only post again if someone has posted before your previous post, meaning no double posting. \n\n- Post your server in the correct channel for it, so heavy NSFW servers only in <#627937749160296448>. only advertising servers in <#627937743707832320>. etc. Ads not mainly based on a topic will be removed. \n\n- Do not spam post. (You have to wait 1 minute in between each post for the link cool-down) \n\n- Your advertisement must include a permanent link. (Expired invites will get deleted) \n\n- Your advertisement must include a good description for your server. (No descriptions will de deleted) \n\n- Your server must follow Discord TOS. "}
+  ]
+};
+    message.delete(1)
+    message.channel.send({embed});
+}
+if  (message.content === prefix + 'ad rules 2') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Advertising Rules",
+      "value": "- If you have any malicious links in your description it will be deleted and you will be punished. \n\n- **If your description includes anything to do with real money, it is staff discretion to delete it. (This includes selling accounts)** \n\n- If your server contains anything to do with any sort of raiding / hacking / modding, it will be deleted and you will be reported to Discord. \n\n- If you leave the server, all your advertisements will be auto deleted.\n\n- Invites Rewards are not allowed, posting such will result in punishment\n\n▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬\n\nIf your server breaks any of the above, a staff member will delete your advertisement and ping you why it was deleted. If you argue or ignore the staff member, you will be punished. \n\n*DAC Staff reserve the right to delete, edit or otherwise modify any content posted in this server, DAC Staff Also reserve the right to issue warnings and other punishments at their discretion with or without reason*"
     }
   ]
 };
