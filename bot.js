@@ -1,4 +1,4 @@
-///Version 1.2.6
+///Version 1.3.0
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -60,40 +60,6 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
   }
-if (message.content === prefix + 'blacklist') {
-const embed = {
-  "color": 16711680,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC © 2019; All Rights Reserved"
-  },
-  "fields": [
-    {
-      "name": "⛔ Blacklist ⛔",
-      "value": "Servers listed here have been added to the DAC Blacklist. Servers can end up on the blacklist for the following reasons. \n\n - Discord [Terms Of Service](https://www.discordapp.com/terms) Violations \n\n - Raidng/Hacking \n\n - Ads containing malicious links \n\n - Banning users without reason (Abuse of power/Impulsive bans) \n\n - Extreme Toxicity\n\n - Breaking Laws\n\n - False Advertising \n\n\n *This list is subject to change and the staff of DAC reserve the right to blacklist servers at their discretion.* "
-    }
-  ]
-};
-message.delete(1)
-message.channel.send({embed});
-  }
-if (message.content === prefix + 'listed servers') {
-const embed = {
-  "color": 5631,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC © 2019; All Rights Reserved"
-  },
-  "fields": [
-    {
-      "name": "Become Listed",
-      "value": "To become a listed server you must meet the following requirements. \n\n\n - Have at least **100** members in your server \n\n - Follow all Discord [Terms Of Service](https://www.discordapp.com/terms) and [Community Guidelines](https://discordapp.com/guidelines) \n\n - Must be an Advertising/Listing server or allow advertising in the server \n\n - DAC Management Must be able to join\n\n - Server and Server Owner can not be blacklisted \n\n\n Apply [here](https://forms.gle/KXytSHBeApYMExKC7) to become a Listed Server\n\n\n *These requirements are subject to change*."
-    }
-  ]
-};
-message.delete(1)
-message.channel.send({embed});
-  }
 if (message.content === prefix + 'ad rights') {
 const embed = {
   "color": 16711910,
@@ -147,23 +113,6 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
 }
-if (message.content === prefix + 'links set 2') {
-const embed = {
-  "color": 16711680,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC © 2019; All Rights Reserved"
-  },
-  "fields": [
-    {
-      "name": "Links",
-      "value": "\n**DAC Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n**DRC Invite:** [https://discord.gg/PU4DzxP](https://discord.gg/PU4DzxP) \n\n**DAC Directory Invite:** [https://discord.gg/aGwSvCw](https://discord.gg/aGwSvCw)"
-    }
-  ]
-};
-message.delete(1)
-message.channel.send({embed});
-  }
 if (message.content === prefix + 'links') {
 const embed = {
   "color": 1376511,
@@ -178,7 +127,7 @@ const embed = {
   "fields": [
     {
       "name": "Links",
-      "value": "**DAC Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n **DRC Invite:** [https://discord.gg/PU4DzxP](https://discord.gg/PU4DzxP) \n\n **Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
+      "value": "**DAC Invite:** [https://discord.gg/ngHhXAa](https://discord.gg/ngHhXAa) \n\n**Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
     }
   ]
 };
@@ -215,40 +164,6 @@ const embed = {
     {
       "name": "DAC Services",
       "value": "```Server Security Check```Want to put your server security to the test? Participate in a Server Security Check and one of our vetted staff will join your server and put your security to the test. You may request a Server Security check by requesting a **Server Security Check** in <#627937691790606336> and a staff member will join when they can and let you know and give you advice on what to do. They will be helping you with on what to add for example bots, verification, staff and etc. This will help prevent nukes and raids. \n ```Server Facelift Feedback```For a server facelift feedback, ask for **Server Facelift Feedback** in <#627937691790606336> and a Growth Team member will join your server to review it and give you feedback on what to change and improve. The Growth Assistance team with help with additional tips and ways to help the server in any possible way."
-    }
-  ]
-};
-message.delete(1)
-message.channel.send({embed});
-  }
-if (message.content === prefix + 'primary objective') {
-const embed = {
-  "color": 16711680,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "Primary Objective"
-  },
-  "fields": [
-    {
-      "name": "Primary Objective",
-      "value": "My primary objective is to assist the members and staff of Discord Advertising Central"
-    }
-  ]
-};
-message.delete(1)
-message.channel.send({embed});
-  }
-if (message.content === prefix + 'secondary objective') {
-const embed = {
-  "color": 16711680,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "Secondary Objective"
-  },
-  "fields": [
-    {
-      "name": "Secondary Objective",
-      "value": "My secondary objective is to take over Discord Advertising Central and all of Discord"
     }
   ]
 };
