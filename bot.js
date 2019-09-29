@@ -201,7 +201,7 @@ const embed = {
       "value": "**Language**  \n\nEnglish only. Please limit other languages to well known quotes or provide a correct translation. \nAnything deemed politically extreme, pornographic, illegal, or unsavory in any way is prohibited. \nRacist or ethnic bashing comments are forbidden even if used in jest. \nComments that play down the use of illegal drugs or promote the use of said substances are strictly forbidden. \nNo use of profanity will be permitted (including masked profanity). If it's something a moderator feels is inappropriate, it will be deleted. "}
   ]
 };
-    
+    message.delete(1)
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 2') {
@@ -235,6 +235,7 @@ const embed = {
     }
   ]
 };
+message.delete(1)
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 3') {
@@ -269,7 +270,7 @@ const embed = {
     }
   ]
 };
-   
+   message.delete(1)
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 5') {
