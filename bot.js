@@ -238,12 +238,12 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
   }
-if (message.content === prefix + 'primary objective') {
+if (message.content === prefix + 'secondary objective') {
 const embed = {
   "color": 16711680,
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "Primary Objective"
+    "text": "Secondary Objective"
   },
   "fields": [
     {
