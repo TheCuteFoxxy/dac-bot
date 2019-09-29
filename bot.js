@@ -202,7 +202,7 @@ const embed = {
     }
   ]
 };
-    message.delete(1)
+    
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 2') {
@@ -214,12 +214,11 @@ const embed = {
   },
   "fields": [
     {
-      "name": "DAC Rules",
+      "name": "DAC Server Rules",
       "value": "**Moderation** \n\nThe Moderation Staff are volunteers recruited by Management. They come in several forms, and you can tell which is which by their title: \n\n <@&569317762480996378>: They only have abilities to delete messages. They will moderate fairly and will answer any questions you have that they are able to. \n\n<@&569313288232501258> - They have the ability to delete messages and warn/kick/ban. They will moderate fairly and will answer any questions you have that they are able to. \n\n<@&569313321296330767>: Overseers of the Helpers and Moderators, these people are the ones to go to if you have a problem with any of the server moderation or if you have any questions on moderation in general. \n\nWe allow no discussion of Moderation (or bans or warnings) in the server. \n\nThe mods have a very tough job: it can be hard to keep the balance between a clean server and a fun server on a daily basis, and they also receive a lot of negative comments and abuse regularly. We would ask that you remain patient with all moderators and that you would be helpful and polite when talking to them; this will make their job that much easier, and in turn make the server a more pleasant place. \n\nPlease note that most moderators still advertise! They have as much a right to post in the capacity of a member as any other user on the server. Remember that they are volunteers, and are members just like you. This means that outside their realm as a moderator, they are to be treated as you would treat any other member. \n\nIndividually judging each possible infraction and acting accordingly is at the sole discretion of the DAC Team. \n\n**Guidelines for the server** \n\n- Do not insult or degrade any of the moderators in any way. \n- The moderators have the right to delete posts. Please follow their instructions. \n- If you notice that your post was deleted, it has been removed for a good reason. Do not complain or argue with the reason, this will result in further punishment. \n- DAC Staff reserve the right to delete, edit or otherwise modify any content posted in this server. "
     }
   ]
 };
-    message.delete(1)
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 3') {
@@ -231,12 +230,12 @@ const embed = {
   },
   "fields": [
     {
-      "name": "DAC Rules",
+      "name": "DAC Server Rules",
       "value": "**Punishments**  \n\nIn some extreme circumstances, no warning will not be given. \n- If you are banned from the forum, you are not allowed to create an account to evade this ban. Doing so will result in the ban being non-appealable \n- Arguing against the DAC team who uphold these rules will be punished and content that seek to create or worsen existing problems will be deleted. \nRepeated violations may result in probation or permanent removal from the server. \nPlease note that we reserve the right to ban, warn, kick, or mute members even if they haven't violated the stated rules. \n\n**OTHER** \n\n**Private messages** \n\- Conversations, discussions and arguments between two people should be done in private. \n Please use the private message system in Discord or other applications (e.g. IRC, skype, ...) \n- Do not harass other people through use of private messages. Repeatedly spamming private messages for personal gain or to irritate other users will result in warnings or bans. All rules also apply to private messages unless stated otherwise. \n- It is not allowed to impose derogations upon the company of Delta Advertising Solutions, nor any of its products or personnel. This server is the property of Delta Advertising Solutions., all rights reserved. \n\n\n*Please be aware that the rules are subject to change* \n\n\n*Last Updated: 09/29/2019*"
     }
   ]
 };
-    message.delete(1)
+   
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'ad rules') {
