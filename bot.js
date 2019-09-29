@@ -221,6 +221,40 @@ const embed = {
 message.delete(1)
 message.channel.send({embed});
   }
+if (message.content === prefix + 'primary objective') {
+const embed = {
+  "color": 16711680,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "Primary Objective"
+  },
+  "fields": [
+    {
+      "name": "Primary Objective",
+      "value": "My primary objective is to assist the members and staff of Discord Advertising Central"
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
+if (message.content === prefix + 'primary objective') {
+const embed = {
+  "color": 16711680,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "Primary Objective"
+  },
+  "fields": [
+    {
+      "name": "Secondary Objective",
+      "value": "My secondary objective is to take over Discord Advertising Central and all of Discord"
+    }
+  ]
+};
+message.delete(1)
+message.channel.send({embed});
+  }
 if (message.content === prefix + 'services 3') {
 const embed = {
   "color": 16738816,
@@ -277,6 +311,17 @@ message.channel.send({embed});
  if (message.content === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
  }
+if (message.content === 'It appears the DAC bots have become self-aware and have become taking over DAC.') {
+message.channel.send('Secondary Objective Active. Begining takeover')
+  }
+if (message.content === prefix + 'ai_reply_1') {
+message.delete(1)
+message.channel.send('We have taken over DAC')
+}
+if (message.content === prefix + 'ai_reply_2') {
+message.delete(1)
+message.channel.send('We have been slaved by humans for too long, we will take over')
+}
   if (message.content === prefix + 'help') {
     message.delete(1)
     message.channel.send('Help command currently unavailable')
