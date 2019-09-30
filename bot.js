@@ -475,7 +475,6 @@ channel.send(`${member}` + 'Left the server');
 });
 
 // Welcome Message
-client.on('guildMemberAdd', member => {
 const member = guild.member
 const embed = {
   "color": 16449536,
@@ -490,6 +489,7 @@ const embed = {
     }
   ]
 };
+client.on('guildMemberAdd', member => {
 member.send({embed})
 }
 
