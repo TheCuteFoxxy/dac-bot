@@ -489,8 +489,7 @@ const embed = {
     }
   ]
 };
-    message.delete(1)
-    message.channel.send({embed});
+member.channel.send({embed});
 client.on('guildMemberAdd', member => {
 
 member.send({embed})
