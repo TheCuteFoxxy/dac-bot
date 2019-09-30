@@ -406,7 +406,6 @@ if (message.content === prefix + 'DAC-158763') {
   message.member.addRole("569313830845415424");
 }
 if (message.content === prefix + 'keygen') {
-if  (message.content === prefix + 'template') {
 const embed = {
   "color": 16449536,
   "footer": {
