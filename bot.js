@@ -489,10 +489,9 @@ const embed = {
     }
   ]
 };
-member.send({embed});
+member.send({embed})
 client.on('guildMemberAdd', member => {
 
-member.send({embed})
 
 
   
