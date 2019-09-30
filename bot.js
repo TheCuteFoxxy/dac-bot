@@ -383,9 +383,22 @@ message.channel.send({embed});
  if (message.content === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
  }
-  if (message.content === prefix + 'help') {
+if  (message.content === prefix + 'help') {
+const embed = {
+  "color": 39674,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Commands List",
+      "value": "Help Command Not Configured, Please contact a the developer."
+    }
+  ]
+};
     message.delete(1)
-    message.channel.send('Help command currently unavailable')
+    message.channel.send({embed});
   }
  if (message.content === prefix + 'ban reasons') {
  message.delete(1)
@@ -394,12 +407,39 @@ message.channel.send({embed});
 
     //Lifetime Premium Key
 if (message.content === prefix + 'DAC-Premium-461234') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Premium Redemption",
+      "value": "Premium Key Redeemed!"
+    }
+  ]
+};
   message.delete(1)
-  message.member.addRole("625700940770574337");
+  message.member.addRole("625700940770574337"),
+  message.channel.send({embed});
 }
-if (message.content === prefix + 'owner') {
+if (message.content === prefix + 'developer') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Bot Developer",
+      "value": "The Bot Owner Is: <@548009285892833280>"
+    }
+  ]
+};
   message.delete(1)
-    message.channel.send('The Bot Owner Is: <@548009285892833280>');
+  message.channel.send({embed});
 }
 if (message.content === prefix + 'DAC-158763') {
   message.delete(1)
@@ -436,9 +476,25 @@ channel.send(`${member}` + 'Left the server');
 
 // Welcome Message
 const member = guild.member
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Welcome To DAC",
+      "value": "`Welcome ${member} to **Discord Advertising Central**! Please read <#627937640481685530> and <#627937642247356416> for the server rules and advertising guidelines. If you at any time need some help, you can send a message in <#627937660677390336> and a staff member will be glad to assist you! \n\nIf you want to partner, head on over to <#627937672907849735> and read that then ping or DM a Partner Manager and they will guide you from there.\n\nYou can get some roles in <#627937643895848970>.\n\nIf you wish to try out our custom services then head over to <#569539946180771856> \n\n__If you leave the server, all your advertisements will be deleted!__\nThanks for joining!`  +  '\n\n To be verified type  `>DAC-429214`' + ` in <#627937632638468116>`"
+    }
+  ]
+};
+    message.delete(1)
+    message.channel.send({embed});
+}
 client.on('guildMemberAdd', member => {
 
-member.send(`Welcome ${member} to **Discord Advertising Central**! Please read <#627937640481685530> and <#627937642247356416> for the server rules and advertising guidelines. If you at any time need some help, you can send a message in <#627937660677390336> and a staff member will be glad to assist you! \n\nIf you want to partner, head on over to <#627937672907849735> and read that then ping or DM a Partner Manager and they will guide you from there.\n\nYou can get some roles in <#627937643895848970>.\n\nIf you wish to try out our custom services then head over to <#569539946180771856> \n\n__If you leave the server, all your advertisements will be deleted!__\nThanks for joining!`  +  '\n\n To be verified type  `>DAC-429214`' + ` in <#627937632638468116>`)
+member.send({embed})
 
 
   
