@@ -489,7 +489,7 @@ const embed = {
     }
   ]
 };
-member.channel.send({embed});
+member.send({embed});
 client.on('guildMemberAdd', member => {
 
 member.send({embed})
