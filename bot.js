@@ -368,7 +368,7 @@ const embed = {
 message.channel.send({embed});
 }}
 });
-// Normal Commands
+/// Ping/Latency Command
   client.on('message', message => {
  if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313393975099392")
@@ -379,9 +379,11 @@ message.channel.send({embed});
         } else if(message.member.roles.has(staff.id)){
           message.channel.send('Pong!'); message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
         }}
+/// Avatar Command
  if (message.content === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
  }
+/// Help Command
 if  (message.content === prefix + 'help') {
 const embed = {
   "color": 39674,
@@ -423,6 +425,7 @@ const embed = {
   message.member.addRole("625700940770574337"),
   message.channel.send({embed});
 }
+///List Bot Developer
 if (message.content === prefix + 'developer') {
 const embed = {
   "color": 16449536,
@@ -440,10 +443,12 @@ const embed = {
   message.delete(1)
   message.channel.send({embed});
 }
+///Entry Key
 if (message.content === prefix + 'DAC-158763') {
   message.delete(1)
   message.member.addRole("569313830845415424");
 }
+///Generate New Key
 if (message.content === prefix + 'keygen') {
 const embed = {
   "color": 16449536,
@@ -460,6 +465,7 @@ const embed = {
 };
   message.delete(1)
   message.author.send({embed});
+///Enter/Leave Logs
 }
 });
 client.on('guildMemberAdd', member => {
@@ -484,7 +490,7 @@ const embed = {
   "fields": [
     {
       "name": "Welcome To DAC",
-      "value": "Welcome to **Discord Advertising Central**! Please read <#627937640481685530> and <#627937642247356416> for the server rules and advertising guidelines. If you at any time need some help, you can send a message in <#627937660677390336> and a staff member will be glad to assist you! \n\nIf you want to partner, head on over to <#627937672907849735> and read that then ping or DM a Partner Manager and they will guide you from there.\n\nYou can get some roles in <#627937643895848970>.\n\nIf you wish to try out our custom services then head over to <#569539946180771856> \n\n__If you leave the server, all your advertisements will be deleted!__\nThanks for joining! \n\nTo be verified type  `>DAC-429214` in <#627937632638468116>"
+      "value": "Welcome to **Discord Advertising Central**! Please read <#627937640481685530> and <#627937642247356416> for the server rules and advertising guidelines. If you at any time need some help, you can send a message in <#627937660677390336> and a staff member will be glad to assist you! \n\nIf you want to partner, head on over to <#627937672907849735> and read that then ping or DM a Partner Manager and they will guide you from there.\n\nYou can get some roles in <#627937643895848970>.\n\nIf you wish to try out our custom services then head over to <#569539946180771856> \n\n__If you leave the server, all your advertisements will be deleted!__\nThanks for joining! \n\nTo be verified type  `>DAC-158763` in <#627937632638468116>"
     }
   ]
 };
