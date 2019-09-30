@@ -325,7 +325,6 @@ const embed = {
 }
 /*
 EMBED TEMPLATE
-
   }
 if  (message.content === prefix + 'template') {
 const embed = {
@@ -491,7 +490,6 @@ const embed = {
 };
 client.on('guildMemberAdd', member => {
 member.send({embed})
-}
 
 
 
