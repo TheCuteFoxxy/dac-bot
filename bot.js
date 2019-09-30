@@ -383,18 +383,10 @@ message.channel.send({embed});
  if (message.content === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
  }
-if (message.content === prefix + 'ai_reply_1') {
-message.delete(1)
-message.channel.send('We have taken over DAC')
-  }
   if (message.content === prefix + 'help') {
     message.delete(1)
     message.channel.send('Help command currently unavailable')
   }
-if (message.content === 'kill me') {
-  message.channel.send(`*kills ${message.author}*`)
-  message.delete(1)
-}
  if (message.content === prefix + 'ban reasons') {
  message.delete(1)
      message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
@@ -413,17 +405,23 @@ if (message.content === prefix + 'DAC-158763') {
   message.delete(1)
   message.member.addRole("569313830845415424");
 }
-if (message.content === prefix + 'DAC-429214') {
-  message.delete(1)
-  message.member.addRole("569313830845415424");
-}
-if (message.content === prefix + 'DAC-789213') {
-  message.delete(1)
-  message.member.addRole("569313830845415424");
-}
 if (message.content === prefix + 'keygen') {
+if  (message.content === prefix + 'template') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Key Generation",
+      "value": "Use the following key in <#627937632638468116> to verify. `>DAC-158763`"
+    }
+  ]
+};
   message.delete(1)
-  message.author.send("Use the following command in <#627937632638468116> to verify. `>DAC-158763`");
+  message.author.send({embed});
 }
 });
 client.on('guildMemberAdd', member => {
