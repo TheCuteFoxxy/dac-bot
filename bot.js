@@ -324,6 +324,19 @@ const embed = {
     message.channel.send({embed});
 }
 /*
+.
+.
+.
+.
+.
+.
+.
+*/
+if (message.content === 'https://discord.gg/YQEQAmj') {
+message.delete(1)
+message.reply('That server is blacklisted in Discord Advertising Central')
+}
+/*
 EMBED TEMPLATE
   }
 if  (message.content === prefix + 'template') {
