@@ -373,7 +373,7 @@ const embed = {
   "fields": [
     {
       "name": "Premium Key Holders",
-      "value": " Key Holder List \n\n<@548009285892833280> - Lifetime (Issued 09/25/2019) \n\n<@293841631583535106> - Lifetime (Issued 09/23/2019) \n\n<@334840635775254528> - Lifetime (Issued 09/23/2019)\n\n <@282966457162399744> - Lifetime (Issued 09/23/2019)"
+      "value": " Key Holder List \n\n<@548009285892833280> - Lifetime (Issued 09/25/2019) \n\n<@617976611064512522> - Lifetime (Issued 09/23/2019) \n\n<@334840635775254528> - Lifetime (Issued 09/23/2019)\n\n <@282966457162399744> - Lifetime (Issued 09/23/2019)"
     }
   ]
 };
@@ -436,6 +436,26 @@ const embed = {
 };
   message.delete(1)
   message.member.addRole("625700940770574337"),
+  message.channel.send({embed});
+}
+
+    //1 Year Premium Key
+if (message.content === prefix + 'DAC-Premium-369528') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Premium Redemption",
+      "value": "Premium Key Redeemed!"
+    }
+  ]
+};
+  message.delete(1)
+  message.member.addRole("632946092492849152"),
   message.channel.send({embed});
 }
 ///List Bot Developer
