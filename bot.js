@@ -324,9 +324,9 @@ const embed = {
     message.delete()
     message.channel.send({embed});
 }
-const forbidden = require("./forbidden.json");
+const forbidden = ["Fuck", "fuck", "Fuck", "Shit", "shit", "Shit", "SHIT", "Sh1t", "SH1T", "sh1t", "Bitch", "BITCH", "B1tch", "b1tch", "B1TCH"];
 if (message.author.bot)return;
-if (message.content.includes(forbidden)) {
+if forbidden.some(el=> message.content.toLowerCase().includes(el))
     const embed = {
       "color": 16711680,
       "footer": {
