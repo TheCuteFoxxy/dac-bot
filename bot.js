@@ -324,9 +324,10 @@ const embed = {
     message.delete()
     message.channel.send({embed});
 }
-const forbidden = ["Fuck", "fuck", "Fuck", "Shit", "shit", "Shit", "SHIT", "Sh1t", "SH1T", "sh1t", "Bitch", "BITCH", "B1tch", "b1tch", "B1TCH"];
+const array = ["Fuck", "fuck", "Fuck", "Shit", "shit", "Shit", "SHIT", "Sh1t", "SH1T", "sh1t", "Bitch", "BITCH", "B1tch", "b1tch", "B1TCH"];
 if (message.author.bot)return;
-if (message.content.includes(forbidden)) {
+if (message.content.includes(array)) {
+console.log(array.some())
     const embed = {
       "color": 16711680,
       "footer": {
