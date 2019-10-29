@@ -325,6 +325,7 @@ const embed = {
     message.channel.send({embed});
 }
 const forbidden = ["Fuck", "fuck", "Fuck", "Shit", "shit", "Shit", "SHIT", "Sh1t", "SH1T", "sh1t", "Bitch", "BITCH", "B1tch", "b1tch", "B1TCH"];
+if (message.author.bot)return;
 if (message.content.includes(forbidden)) {
     const embed = {
       "color": 16711680,
