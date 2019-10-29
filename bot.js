@@ -1,8 +1,9 @@
-///Version 1.3.0
+///Version 1.3.1
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
 const prefix = ">"
+const devprefix = "/"
 const guild = "569304035472179200"
 
 
@@ -20,7 +21,7 @@ client.on("ready", async () => {
   });
 // Embed Commands
   client.on('message', message => {
-    if  (message.content === prefix + 'test embed') {
+    if  (message.content === devprefix + 'test embed') {
       const embed = {
         "title": "Discord Advertising Central",
         "description": "This is a test of the emergency embed system. Please do not remain calm.",
@@ -37,7 +38,7 @@ client.on("ready", async () => {
           "url": "https://cdn.discordapp.com/attachments/615548285456744504/615554484357300244/DAC_banner.jpg"
         }
       };
-      message.delete(1)
+      message.delete()
       message.channel.send({embed});
     }      
 if (message.content === prefix + 'checkpoint') {
@@ -57,7 +58,7 @@ const embed = {
     }
   ]
 };
-message.delete(1)
+message.delete()
 message.channel.send({embed});
   }
 if (message.content === prefix + 'ad rights') {
@@ -75,7 +76,7 @@ const embed = {
     }
   ]
 };
-message.delete(1)
+message.delete()
 message.channel.send({embed});
   }
 if  (message.content === prefix + 'partner req') {
@@ -92,7 +93,7 @@ const embed = {
     }
   ]
 };
-    message.delete(1)
+    message.delete()
     message.channel.send({embed});
 }
 if (message.content === prefix + 'Insurance') {
@@ -110,7 +111,7 @@ const embed = {
     }
   ]
 };
-message.delete(1)
+message.delete()
 message.channel.send({embed});
 }
 if (message.content === prefix + 'links') {
@@ -131,7 +132,7 @@ const embed = {
     }
   ]
 };
-message.delete(1)
+message.delete()
 message.channel.send({embed});
 }
 if (message.content === prefix + 'services 1')  {
@@ -149,7 +150,7 @@ const embed = {
     }
   ]
 };
-    message.delete(1)
+    message.delete()
 message.channel.send({embed});
   }
 if (message.content === prefix + 'services 2') {
@@ -167,7 +168,7 @@ const embed = {
     }
   ]
 };
-message.delete(1)
+message.delete()
 message.channel.send({embed});
   }
 if (message.content === prefix + 'services 3') {
@@ -185,7 +186,7 @@ const embed = {
     }
   ]
 };
-message.delete(1)
+message.delete()
 message.channel.send({embed});
   }
 if  (message.content === prefix + 'rules 1') {
@@ -201,7 +202,7 @@ const embed = {
       "value": "**Language**  \n\nEnglish only. Please limit other languages to well known quotes or provide a correct translation. \nAnything deemed politically extreme, pornographic, illegal, or unsavory in any way is prohibited. \nRacist or ethnic bashing comments are forbidden even if used in jest. \nComments that play down the use of illegal drugs or promote the use of said substances are strictly forbidden. \nNo use of profanity will be permitted (including masked profanity). If it's something a moderator feels is inappropriate, it will be deleted. "}
   ]
 };
-    message.delete(1)
+    message.delete()
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 2') {
@@ -218,7 +219,7 @@ const embed = {
     }
   ]
 };
-    message.delete(1)
+    message.delete()
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 2') {
@@ -235,7 +236,7 @@ const embed = {
     }
   ]
 };
-message.delete(1)
+message.delete()
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 3') {
@@ -253,7 +254,7 @@ const embed = {
     
   ]
 };
-    message.delete(1)
+    message.delete()
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 4') {
@@ -270,7 +271,7 @@ const embed = {
     }
   ]
 };
-   message.delete(1)
+   message.delete()
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'rules 5') {
@@ -287,7 +288,7 @@ const embed = {
     }
   ]
 };
-    message.delete(1)
+    message.delete()
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'ad rules 1') {
@@ -303,7 +304,7 @@ const embed = {
       "value": "Please read all the following before posting any ads! \n\n- Only post (Server) advertisements under the ADVERTISING category. \n\n- You may post 4 ads every 24 hours for one server. If 2 people are posting for one server, it must not exceed 4 posts for that one server. \n\n- Only post again if someone has posted before your previous post, meaning no double posting. \n\n- Post your server in the correct channel for it, so heavy NSFW servers only in <#627937749160296448>. only advertising servers in <#627937743707832320>. etc. Ads not mainly based on a topic will be removed. \n\n- Do not spam post. (You have to wait 1 minute in between each post for the link cool-down) \n\n- Your advertisement must include a permanent link. (Expired invites will get deleted) \n\n- Your advertisement must include a good description for your server. (No descriptions will de deleted) \n\n- Your server must follow Discord TOS. "}
   ]
 };
-    message.delete(1)
+    message.delete()
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'ad rules 2') {
@@ -320,20 +321,29 @@ const embed = {
     }
   ]
 };
-    message.delete(1)
+    message.delete()
     message.channel.send({embed});
 }
-/*
-.
-.
-.
-.
-.
-.
-.
-*/
+const forbidden = ["Fuck", "fuck", "Fuck", "Shit", "shit", "Shit", "SHIT", "Sh1t", "SH1T", "sh1t", "Bitch", "BITCH", "B1tch", "b1tch", "B1TCH"];
+if (message.content.includes(forbidden)) {
+    const embed = {
+      "color": 16711680,
+      "footer": {
+        "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+        "text": "DAC © 2019; All Rights Reserved"
+      },
+      "fields": [
+        {
+          "name": "AutoMod",
+          "value": "Watch your language!"
+        }
+      ]
+    };
+        message.delete()
+        message.channel.send({embed});
+    }
 if (message.content === 'https://discord.gg/YQEQAmj') {
-message.delete(1)
+message.delete()
 message.reply('That server is blacklisted in Discord Advertising Central')
 }
 /*
@@ -353,7 +363,7 @@ const embed = {
     }
   ]
 };
-    message.delete(1)
+    message.delete()
     message.channel.send({embed});
 }
 */
@@ -377,13 +387,13 @@ const embed = {
     }
   ]
 };
-  message.delete(1)
+  message.delete()
 message.channel.send({embed});
 }}
-if (message.content === prefix + 'keys') {
+if (message.content === devprefix + 'keys') {
 if(message.channel.type =='dm') return;
 const developer = message.guild.roles.get("638563829902606356")
-        message.delete(1)
+        message.delete()
         if(!message.member.roles.has(developer.id)){
             message.channel.send ('Only the bot developer can use this command!')
             return;
@@ -395,7 +405,7 @@ const developer = message.guild.roles.get("638563829902606356")
   client.on('message', message => {
  if (message.content === prefix + 'ping') {
         const staff = message.guild.roles.get("569313393975099392")
-        message.delete(1)
+        message.delete()
         if(!message.member.roles.has(staff.id)){
             message.channel.send ('You must be staff to use this command!')
             return;
@@ -422,13 +432,9 @@ const embed = {
     }
   ]
 };
-    message.delete(1)
+    message.delete()
     message.channel.send({embed});
   }
- if (message.content === prefix + 'ban reasons') {
- message.delete(1)
-     message.channel.send('**Bannable Offenses:** \n `Raiding (With proof)` \n `Hacking (With proof)` \n `Spamming DMs (With proof)` \n `DM Advertising (With proof)` \n `Violating Discord ToS (With proof)` \n `Making Threats (With proof)` \n `Sending Malicious Links (With proof)` \n `Nuking (With proof)` \n `Stealing our bots code (With proof)` \n `Violating Copyright (With proof)` \n `False Reporting` \n `DDoS Attacks (With proof)`');
-}
 
     //Lifetime Premium Key
 if (message.content === prefix + 'DAC-Premium-461234') {
@@ -445,14 +451,14 @@ const embed = {
     }
   ]
 };
-  message.delete(1)
+  message.delete()
   message.member.addRole("569313968326311957"),
 console.log('A Premium Key Was Redeemed - Lifetime')
   message.channel.send({embed});
 }
 
     //1 Year Premium Key
-if (message.content === prefix + 'DAC-Premium-369528') {
+/*if (message.content === prefix + 'DAC-Premium-369528') {
 const embed = {
   "color": 16449536,
   "footer": {
@@ -466,11 +472,13 @@ const embed = {
     }
   ]
 };
-  message.delete(1)
+
+  message.delete()
   message.member.addRole("632946092492849152"),
   console.log('A Premium Key Was Redeemed - 1 Year')
   message.channel.send({embed});
 }
+*/
 ///List Bot Developer
 if (message.content === prefix + 'developer') {
 const embed = {
@@ -486,12 +494,12 @@ const embed = {
     }
   ]
 };
-  message.delete(1)
+  message.delete()
   message.channel.send({embed});
 }
 ///Entry Key
 if (message.content === prefix + 'DAC-158763') {
-  message.delete(1)
+  message.delete()
   message.member.addRole("569313830845415424");
 }
 ///Generate New Key
@@ -509,7 +517,7 @@ const embed = {
     }
   ]
 };
-  message.delete(1)
+  message.delete()
   message.author.send({embed});
 ///Enter/Leave Logs
 }
@@ -543,8 +551,5 @@ const embed = {
 client.on('guildMemberAdd', member => {
 member.send({embed})
 
-
-
-  
     });
 client.login(auth.token);
