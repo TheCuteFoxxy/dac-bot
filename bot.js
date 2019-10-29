@@ -388,7 +388,7 @@ const developer = message.guild.roles.get("638563829902606356")
             message.channel.send ('Only the bot developer can use this command!')
             return;
         } else if(message.member.roles.has(developer.id)){
-          message.channel.send('**DAC KEYS**/n/n/n **Lifetime Premium:** `>DAC-Premium-461234`/n/n **VERIFICATION KEY:** `>DAC-158763`');
+          message.channel.send('**DAC KEYS**\n\n\n **Lifetime Premium:** `>DAC-Premium-461234`\n\n **VERIFICATION KEY:** `>DAC-158763`');
         }}
 });
 /// Ping/Latency Command
@@ -401,6 +401,7 @@ const developer = message.guild.roles.get("638563829902606356")
             return;
         } else if(message.member.roles.has(staff.id)){
           message.channel.send('Pong!'); message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
+   message.delete(30)
         }}
 /// Avatar Command
  if (message.content === prefix + 'avatar') {
