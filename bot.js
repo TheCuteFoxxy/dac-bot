@@ -127,7 +127,7 @@ const embed = {
   "fields": [
     {
       "name": "Links",
-      "value": "**DAC Invite:** [https://discord.gg/xNvRPk](https://discord.gg/xNvRPk) \n\n**Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
+      "value": "**DAC Invite:** [https://discord.gg/WcSTdpp](https://discord.gg/WcSTdpp) \n\n**Punishment Appeal:** [https://forms.gle/p8fDS37ZUZPfVDLs7](https://forms.gle/p8fDS37ZUZPfVDLs7) \n\n **Insurance Policy:** [https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing](https://docs.google.com/document/d/1nV8MsEyuOOoeIrkEISKOvbziOEPQgwgcGeZkfkttr-M/edit?usp=sharing) \n\n **DAC Insuance Claim:** [https://forms.gle/FYi98bK5kPEVW3RGA](https://forms.gle/FYi98bK5kPEVW3RGA)"
     }
   ]
 };
@@ -380,6 +380,16 @@ const embed = {
   message.delete(1)
 message.channel.send({embed});
 }}
+if (message.content === prefix + 'keys') {
+if(message.channel.type =='dm') return;
+const developer = message.guild.roles.get("638563829902606356")
+        message.delete(1)
+        if(!message.member.roles.has(developer.id)){
+            message.channel.send ('Only the bot developer can use this command!')
+            return;
+        } else if(message.member.roles.has(developer.id)){
+          message.channel.send('**DAC KEYS**/n/n/n **Lifetime Premium:** `>DAC-Premium-461234`/n/n **VERIFICATION KEY:** `>DAC-158763`');
+        }}
 });
 /// Ping/Latency Command
   client.on('message', message => {
