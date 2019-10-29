@@ -324,7 +324,7 @@ const embed = {
     message.delete()
     message.channel.send({embed});
 }
-const array = ["Fuck", "fuck", "Shit", "shit", "Shit", "SHIT", "Sh1t", "SH1T", "sh1t", "Bitch", "BITCH", "B1tch", "b1tch", "B1TCH"];
+const array = [Fuck, fuck, Shit, shit, Shit, SHIT, Sh1t, SH1T, sh1t, Bitch, BITCH, B1tch, b1tch, B1TCH];
 if (message.author.bot)return;
 if (message.content.includes(array)) {
 console.log(array.includes(fuck))
