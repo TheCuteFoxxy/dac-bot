@@ -471,7 +471,9 @@ const embed2 = {
 console.log('A Premium Key Was Redeemed - Lifetime')
   message.channel.send({embed});
   return;
-  client.channels.get('627937789027155978').send({embed2})
+console.log('Sending Premium Logs')
+  const pchannel = message.guild.channels.get("606660155722956800")
+  pchannel.send({embed2})
 }
 
     //1 Year Premium Key
