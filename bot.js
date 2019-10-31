@@ -1,4 +1,4 @@
-///Version 1.3.3
+///Version 1.4.3
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -369,29 +369,6 @@ const embed = {
     message.channel.send({embed});
 }
 */
-if (message.content === prefix + 'whois premium') {
-if(message.channel.type =='dm') return;
-const management = message.guild.roles.get("584069788364439553")
-    if(!message.member.roles.has(management.id)){
-      message.channel.send ('You must be Management to use this command!')
-      return;
-} else if(message.member.roles.has(management.id)){
-const embed = {
-  "color": 5631,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC Premium List"
-  },
-  "fields": [
-    {
-      "name": "Premium Key Holders",
-      "value": " Key Holder List \n\n<@548009285892833280> - Lifetime (Issued 09/25/2019) \n\n<@617976611064512522> - Lifetime (Issued 09/23/2019) \n\n<@334840635775254528> - Lifetime (Issued 09/23/2019)\n\n <@282966457162399744> - Lifetime (Issued 09/23/2019)\n\n <@403006767283568641> - Lifetime (Issued 10/26/2019)"
-    }
-  ]
-};
-  message.delete()
-message.channel.send({embed});
-}}
 if (message.content === devprefix + 'keys') {
 if(message.channel.type =='dm') return;
 const developer = message.guild.roles.get("638563829902606356")
@@ -400,7 +377,7 @@ const developer = message.guild.roles.get("638563829902606356")
             message.channel.send ('Only the bot developer can use this command!')
             return;
         } else if(message.member.roles.has(developer.id)){
-          message.channel.send('**DAC KEYS**\n\n\n **Lifetime Premium:** `>DAC-Premium-461234`\n\n **VERIFICATION KEY:** `>DAC-158763`');
+          message.channel.send('**DAC KEYS**\n\n\n **Lifetime Premium:** `>>DAC-Premium-871319`\n\n **VERIFICATION KEY:** `>DAC-158763`');
         }}
 });
 /// Ping/Latency Command
@@ -439,7 +416,7 @@ const embed = {
   }
 
     //Lifetime Premium Key
-if (message.content === prefix + 'DAC-Premium-461234') {
+if (message.content === prefix + 'DAC-Premium-871319') {
 const embed = {
   "color": 16449536,
   "footer": {
