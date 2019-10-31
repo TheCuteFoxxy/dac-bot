@@ -453,10 +453,25 @@ const embed = {
     }
   ]
 };
+const embed2 = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Premium Redemption",
+      "value": "`$user` redeemed a lifetime premium key"
+    }
+  ]
+};
   message.delete()
   message.member.addRole("569313968326311957"),
 console.log('A Premium Key Was Redeemed - Lifetime')
   message.channel.send({embed});
+  return;
+  client.channels.get('627937789027155978').send({embed2})
 }
 
     //1 Year Premium Key
