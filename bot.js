@@ -308,10 +308,6 @@ if (message.content === 'https://discord.gg/YQEQAmj') {
 message.delete()
 message.reply('That server is blacklisted in Discord Advertising Central')
 }
-if (message.content.includes === 'Genesis Advertising') {
-message.delete()
-message.reply('That server is blacklisted in Discord Advertising Central')
-  }
     if (message.content === prefix + 'jobs') {
 const embed = {
   "title": "Staff Positions and Applications",
