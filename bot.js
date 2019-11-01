@@ -237,6 +237,22 @@ const embed = {
     message.delete()
     message.channel.send({embed});
 }
+if (message.content === prefix + 'rules 4') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "DAC Server Rules",
+      "value": "**Punishments**  \n\nIn some extreme circumstances, no warning will not be given. \n- If you are banned from the forum, you are not allowed to create an account to evade this ban. Doing so will result in the ban being non-appealable \n- Arguing against the DAC team who uphold these rules will be punished and content that seek to create or worsen existing problems will be deleted. \nRepeated violations may result in probation or permanent removal from the server. \nPlease note that we reserve the right to ban, warn, kick, or mute members even if they haven't violated the stated rules."    }
+  ]
+};
+   message.delete()
+    message.channel.send({embed});
+}
 if  (message.content === prefix + 'rules 5') {
 const embed = {
   "color": 16449536,
@@ -252,23 +268,6 @@ const embed = {
   ]
 };
     message.delete()
-    message.channel.send({embed});
-}
-if (message.content === prefix + 'rules 4') {
-const embed = {
-  "color": 16449536,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC © 2019; All Rights Reserved"
-  },
-  "fields": [
-    {
-      "name": "DAC Server Rules",
-      "value": "**Punishments**  \n\nIn some extreme circumstances, no warning will not be given. \n- If you are banned from the forum, you are not allowed to create an account to evade this ban. Doing so will result in the ban being non-appealable \n- Arguing against the DAC team who uphold these rules will be punished and content that seek to create or worsen existing problems will be deleted. \nRepeated violations may result in probation or permanent removal from the server. \nPlease note that we reserve the right to ban, warn, kick, or mute members even if they haven't violated the stated rules. \n\n**OTHER** \n\n**Private messages** \n\- Conversations, discussions and arguments between two people should be done in private. \n Please use the private message system in Discord or other applications (e.g. IRC, skype, ...) \n- Do not harass other people through use of private messages. Repeatedly spamming private messages for personal gain or to irritate other users will result in warnings or bans. All rules also apply to private messages unless stated otherwise. \n- It is not allowed to impose derogations upon the company of Delta Advertising Solutions, nor any of its products or personnel. This server is the property of Delta Advertising Solutions., all rights reserved. \n\n\n*Please be aware that the rules are subject to change* \n\n\n*Last Updated: 09/29/2019*"
-    }
-  ]
-};
-   message.delete()
     message.channel.send({embed});
 }
 if  (message.content === prefix + 'ad rules 1') {
