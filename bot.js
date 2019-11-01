@@ -1,4 +1,4 @@
-///Version 1.4.4
+///Version 1.4.5
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -237,7 +237,7 @@ const embed = {
     message.delete()
     message.channel.send({embed});
 }
-if  (message.content === prefix + 'rules 4') {
+if (message.content === prefix + 'rules 4') {
 const embed = {
   "color": 16449536,
   "footer": {
