@@ -1,4 +1,4 @@
-///Version 1.4.3
+///Version 1.4.4
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -348,36 +348,51 @@ if (message.content === 'https://discord.gg/YQEQAmj') {
 message.delete()
 message.reply('That server is blacklisted in Discord Advertising Central')
 }
-/*
-EMBED TEMPLATE
+if (message.content.includes === 'Genesis Advertising') {
+message.delete()
+message.reply('That server is blacklisted in Discord Advertising Central')
   }
-if  (message.content === prefix + 'template') {
+    if (message.content === prefix + 'jobs') {
 const embed = {
-  "color": 16449536,
+  "title": "Staff Positions and Applications",
+  "description": "List of all staff positions and applications\n\n",
+  "color": 767,
+  "timestamp": "2019-11-01T11:12:35.537Z",
   "footer": {
     "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC © 2019; All Rights Reserved"
+    "text": "Last Updated"
   },
   "fields": [
     {
-      "name": "Template",
-      "value": "null"
+      "name": "Moderation Dept. (Helper, Moderator, Lead Moderator)",
+      "value": "Delete ads that break the advertising rules and help people if needed. You may only start at Helper and work your way up the ranks. This is the only position available with hierarchy ranks.\n\n[Apply For Moderation Dept.](https://forms.gle/gujdAQ4oQks6PBHS9)"
+    },
+    {
+      "name": "Partnership Dept. (Partnership Manager)",
+      "value": "Partner DAC with other servers, at least 2/week.\n\n [Apply For Partnership Dept.](https://forms.gle/A5yXxAuENdDnC8scA)"
+    },
+    {
+      "name": "Growth Dept. (Growth Expert)",
+      "value": "Provide growth assistance and advice, as well assist members with things offered in <#627937689920077843>\n\n [Apply For Growth Dept.](https://forms.gle/gACFau3AgMzJmRX36)"
+    },
+    {
+      "name": "Support Dept.",
+      "value": "Assist users with questions and concerns via <#627937660677390336>\n\n [Apply For Support Dept.](https://forms.gle/bptXQQjim6qFWQHw5)"
     }
   ]
 };
-    message.delete()
-    message.channel.send({embed});
+message.delete()
+message.channel.send({embed});
 }
-*/
 if (message.content === devprefix + 'keys') {
 if(message.channel.type =='dm') return;
 const developer = message.guild.roles.get("638563829902606356")
         message.delete()
         if(!message.member.roles.has(developer.id)){
-            message.channel.send ('Only the bot developer can use this command!')
+            message.channel.send ('Only a bot developer can use this command!')
             return;
         } else if(message.member.roles.has(developer.id)){
-          message.channel.send('**DAC KEYS**\n\n\n **Lifetime Premium:** `>>DAC-Premium-871319`\n\n **VERIFICATION KEY:** `>DAC-158763`');
+          message.author.send('**DAC KEYS**\n\n\n **Lifetime Premium:** `>>DAC-Premium-871319`\n\n **VERIFICATION KEY:** `>DAC-158763`');
         }}
 });
 /// Ping/Latency Command
@@ -430,20 +445,6 @@ const embed = {
     }
   ]
 };
-// This embed does not send :(
-// const embed2 = {
-//   "color": 16449536,
-//   "footer": {
-//     "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-//     "text": "DAC © 2019; All Rights Reserved"
-//   },
-//   "fields": [
-//     {
-//       "name": "DAC Premium Redemption",
-//       "value": "`$user` redeemed a lifetime premium key"
-//     }
-//   ]
-// };
   message.delete()
   message.member.addRole("569313968326311957"),
 console.log('A Premium Key Was Redeemed - Lifetime')
@@ -451,7 +452,6 @@ console.log('A Premium Key Was Redeemed - Lifetime')
   (message.guild.channels.get('627937789027155978').send(`${message.author.tag} \`${message.author.id}\` redeemed a lifetime premium key`));
   return;
 }
-
     //1 Year Premium Key
 /*if (message.content === prefix + 'DAC-Premium-369528') {
 const embed = {
@@ -485,7 +485,7 @@ const embed = {
   "fields": [
     {
       "name": "Bot Developer",
-      "value": "The Bot Owner Is: <@548009285892833280>"
+      "value": "The Bot Developers: \n\n<@548009285892833280> - Bot Owner and Developer \n\n<@524371727812263948> - Bot Developer"
     }
   ]
 };
