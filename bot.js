@@ -21,26 +21,6 @@ client.on("ready", async () => {
   });
 // Embed Commands
   client.on('message', message => {
-    if  (message.content === devprefix + 'test embed') {
-      const embed = {
-        "title": "Discord Advertising Central",
-        "description": "This is a test of the emergency embed system. Please do not remain calm.",
-        "color": 1835263,
-        "timestamp": "2019-08-26T13:49:14.682Z",
-        "footer": {
-          "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-          "text": "DAC © 2019; All Rights Reserved"
-        },
-        "thumbnail": {
-          "url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg"
-        },
-        "image": {
-          "url": "https://cdn.discordapp.com/attachments/615548285456744504/615554484357300244/DAC_banner.jpg"
-        }
-      };
-      message.delete()
-      message.channel.send({embed});
-    }      
 if (message.content === prefix + 'checkpoint') {
 const embed = {
   "color": 16056064,
@@ -324,26 +304,6 @@ const embed = {
     message.delete()
     message.channel.send({embed});
 }
-/*const forbidden = ["Fuck", "fuck", "Fuck", "Shit", "shit", "Shit", "SHIT", "Sh1t", "SH1T", "sh1t", "Bitch", "BITCH", "B1tch", "b1tch", "B1TCH"];
-if (message.content.includes(forbidden)) {
-    const embed = {
-      "color": 16711680,
-      "footer": {
-        "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-        "text": "DAC © 2019; All Rights Reserved"
-      },
-      "fields": [
-        {
-          "name": "AutoMod",
-          "value": "Watch your language!"
-        }
-      ]
-    };
-        message.delete()
-        message.channel.send({embed});
-    }
-    */
-   
 if (message.content === 'https://discord.gg/YQEQAmj') {
 message.delete()
 message.reply('That server is blacklisted in Discord Advertising Central')
@@ -392,7 +352,7 @@ const developer = message.guild.roles.get("638563829902606356")
             message.channel.send ('Only a bot developer can use this command!')
             return;
         } else if(message.member.roles.has(developer.id)){
-          message.author.send('**DAC KEYS**\n\n\n **Lifetime Premium:** `>>DAC-Premium-871319`\n\n **VERIFICATION KEY:** `>DAC-158763`');
+          message.author.send('**DAC KEYS**\n\n\n **Lifetime Premium:** `>DAC-Premium-871319`\n\n **VERIFICATION KEY:** `>DAC-158763`');
         }}
 });
 /// Ping/Latency Command
