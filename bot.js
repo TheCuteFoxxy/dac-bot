@@ -1,4 +1,4 @@
-///Version 1.5.1
+///Version 1.5.3
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -83,7 +83,7 @@ const embed = {
   "fields": [
     {
       "name": "Bot Version",
-      "value": "v.1.5.1"
+      "value": "v.1.5.3"
     }
   ]
 };
@@ -155,5 +155,5 @@ const embed = {
 client.on('guildMemberAdd', member => {
 member.send({embed})
 })
-
+});
 client.login(auth.token);
