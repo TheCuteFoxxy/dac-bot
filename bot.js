@@ -98,6 +98,9 @@ const embed = {
  if (message.content === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
  }
+if(message.content.toLowerCase() == "back in nam") {
+message.channel.send('https://tenor.com/Qk0Y.gif')
+}
 ///Entry Key
 if (message.content === prefix + 'DAC-158763') {
   message.delete()
