@@ -99,7 +99,7 @@ const embed = {
  if (message.content === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
  }
-if(message.includes.toLowerCase()  == "back in nam") {
+if(message.content.toLowerCase()  == "back in nam") {
 message.channel.send('https://tenor.com/Qk0Y.gif')
 }
 ///Entry Key
