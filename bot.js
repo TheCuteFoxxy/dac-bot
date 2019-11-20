@@ -74,7 +74,7 @@ console.log('A Premium Key Was Redeemed - Lifetime')
   (message.guild.channels.get('627937789027155978').send(`${message.author.tag} \`${message.author.id}\` redeemed a lifetime premium key`));
   return;
 }
-if (message.content  === prefix + 'Version') {
+if (message.content.toLowerCase()  === prefix + 'Version') {
 const embed = {
   "color": 16449536,
   "footer": {
@@ -92,7 +92,7 @@ const embed = {
   message.channel.send({embed})
 }
 /// Ping/Latency Command
- if (message.content  === prefix + 'Ping') {
+ if (message.content.toLowerCase()  === prefix + 'Ping') {
    message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
         }
 /// Avatar Command
@@ -108,14 +108,14 @@ if (message.content === prefix + 'DAC-158763') {
   message.member.addRole("569313830845415424");
 }
 //Reaction - Hello React
-if (message.contenttoLowerCase() === 'Hello' ||(message.content === 'Hi')) {
+if (message.content.toLowerCase() === 'Hello' ||(message.content === 'Hi')) {
 message.react('👋')
 }
-if (message.contenttoLowerCase() === 'Help') {
+if (message.content.toLowerCase() === 'Help') {
 message.reply('Need help? Send a DM to <@646723256241487882> for assistance!')
 }
 ///Generate New Key
-if (message.content  === prefix + 'Keygen') {
+if (message.content.toLowerCase()  === prefix + 'Keygen') {
 const embed = {
   "color": 16449536,
   "footer": {
