@@ -21,7 +21,7 @@ client.on("ready", async () => {
   });
 // Embed Commands
   client.on('message', message => {
-if (message.content  === devprefix + 'Keys') {
+if (message.content  === devprefix + 'keys') {
 if(message.channel.type =='dm') return;
 const developer = message.guild.roles.get("638563829902606356")
         message.delete()
@@ -74,7 +74,7 @@ console.log('A Premium Key Was Redeemed - Lifetime')
   (message.guild.channels.get('627937789027155978').send(`${message.author.tag} \`${message.author.id}\` redeemed a lifetime premium key`));
   return;
 }
-if (message.content === prefix + 'Version') {
+if (message.content === prefix + 'version') {
 const embed = {
   "color": 16449536,
   "footer": {
@@ -92,7 +92,7 @@ const embed = {
   message.channel.send({embed})
 }
 /// Ping/Latency Command
- if (message.content === prefix + 'Ping') {
+ if (message.content === prefix + 'ping') {
     message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
         }
 /// Avatar Command
@@ -111,7 +111,7 @@ if (message.content === prefix + 'DAC-158763') {
 if (message.content === 'Hello' ||(message.content === 'Hi')) {
 message.react('👋')
 }
-if (message.content === 'Help') {
+if (message.content === 'help' || (message.content === 'Help')) {
 message.reply('Need help? Send a DM to <@646723256241487882> for assistance!')
 }
 ///Generate New Key
