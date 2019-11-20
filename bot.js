@@ -32,22 +32,6 @@ const developer = message.guild.roles.get("638563829902606356")
           message.author.send('**DAC KEYS**\n\n\n **Lifetime Premium:** `>DAC-Premium-871319`\n\n **VERIFICATION KEY:** `>DAC-158763`');
         }}
 });
-/// Ping/Latency Command
-  client.on('message', message => {
- if (message.content === prefix + 'ping') {
-        const staff = message.guild.roles.get("569313393975099392")
-        message.delete()
-        if(!message.member.roles.has(staff.id)){
-            message.channel.send ('You must be staff to use this command!')
-            return;
-        } else if(message.member.roles.has(staff.id)){
-          message.channel.send('Pong!'); message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
-   message.delete(30)
-        }}
-/// Avatar Command
- if (message.content === prefix + 'avatar') {
-      message.reply(message.author.avatarURL);
- }
 /// Help Command
 if  (message.content === prefix + 'help') {
 const embed = {
@@ -66,7 +50,6 @@ const embed = {
     message.delete()
     message.channel.send({embed});
   }
-
     //Lifetime Premium Key
 if (message.content === prefix + 'DAC-Premium-871319') {
 const embed = {
@@ -89,33 +72,23 @@ console.log('A Premium Key Was Redeemed - Lifetime')
   (message.guild.channels.get('627937789027155978').send(`${message.author.tag} \`${message.author.id}\` redeemed a lifetime premium key`));
   return;
 }
-    //1 Year Premium Key
-/*if (message.content === prefix + 'DAC-Premium-369528') {
-const embed = {
-  "color": 16449536,
-  "footer": {
-    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
-    "text": "DAC © 2019; All Rights Reserved"
-  },
-  "fields": [
-    {
-      "name": "DAC Premium Redemption",
-      "value": "Premium Key Redeemed!"
-    }
-  ]
-};
-
-  message.delete()
-  message.member.addRole("632946092492849152"),
-  console.log('A Premium Key Was Redeemed - 1 Year')
-  message.channel.send({embed});
-}
-*/
-}
+/// Ping/Latency Command
+  client.on('message', message => {
+ if (message.content === prefix + 'ping') {
+   message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
+        }}
+/// Avatar Command
+ if (message.content === prefix + 'avatar') {
+      message.reply(message.author.avatarURL);
+ }
 ///Entry Key
 if (message.content === prefix + 'DAC-158763') {
   message.delete()
   message.member.addRole("569313830845415424");
+}
+//Reacytion - Hello React
+if (message.content === 'Hello' || (message.content === 'hello' || (message.content === 'Hi' || (message.content === 'hi')))) {
+message.react('👋')
 }
 ///Generate New Key
 if (message.content === prefix + 'keygen') {
