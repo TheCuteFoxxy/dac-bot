@@ -108,7 +108,7 @@ if (message.content === prefix + 'DAC-158763') {
   message.member.addRole("569313830845415424");
 }
 //Reaction - Hello React
-if (message.content.toLowerCase === 'hello' ||(message.content.toLowerCase === 'hi')) {
+if (message.content.toLowerCase() === 'hello' ||(message.content.toLowerCase() === 'hi')) {
 message.react('👋')
 }
 if (message.content === 'help' || (message.content === 'Help')) {
