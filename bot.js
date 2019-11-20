@@ -34,7 +34,8 @@ const developer = message.guild.roles.get("638563829902606356")
 });
 /// Help Command
 client.on('message', message => {
-if (message.content.toLowerCase() === prefix + 'Help') {
+  if(!message.content) return;
+if (message.content.toLowerCase() === prefix + 'help') {
 const embed = {
   "color": 39674,
   "footer": {
