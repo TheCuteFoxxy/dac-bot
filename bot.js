@@ -33,7 +33,8 @@ const developer = message.guild.roles.get("638563829902606356")
         }}
 });
 /// Help Command
-if  (message.content === prefix + 'help') {
+client.on('message', message => {
+if (message.content === prefix + 'help') {
 const embed = {
   "color": 39674,
   "footer": {
