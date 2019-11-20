@@ -92,19 +92,14 @@ const embed = {
   message.channel.send({embed})
 }
 /// Ping/Latency Command
- if (message.content.toLowerCase()  === prefix + 'Ping') {
-  try {
+ if (message.content === prefix + 'Ping') {
     message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
-  } catch (error) {
-    
-  }(error)=>{console.log(error.name + ":" + error.message);
-  }
         }
 /// Avatar Command
  if (message.content === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
  }
-if(message.content.toLowerCase()  == "back in nam") {
+if(message.content === "back in nam") {
 message.channel.send('https://tenor.com/Qk0Y.gif')
 }
 ///Entry Key
@@ -113,10 +108,10 @@ if (message.content === prefix + 'DAC-158763') {
   message.member.addRole("569313830845415424");
 }
 //Reaction - Hello React
-if (message.content.toLowerCase() === 'Hello' ||(message.content === 'Hi')) {
+if (message.content === 'Hello' ||(message.content === 'Hi')) {
 message.react('👋')
 }
-if (message.content.toLowerCase() === 'Help') {
+if (message.content === 'Help') {
 message.reply('Need help? Send a DM to <@646723256241487882> for assistance!')
 }
 ///Generate New Key
