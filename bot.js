@@ -74,7 +74,7 @@ console.log('A Premium Key Was Redeemed - Lifetime')
   (message.guild.channels.get('627937789027155978').send(`${message.author.tag} \`${message.author.id}\` redeemed a lifetime premium key`));
   return;
 }
-if (message.content.toLowerCase()  === prefix + 'Version') {
+if (message.content === prefix + 'Version') {
 const embed = {
   "color": 16449536,
   "footer": {
@@ -115,7 +115,7 @@ if (message.content === 'Help') {
 message.reply('Need help? Send a DM to <@646723256241487882> for assistance!')
 }
 ///Generate New Key
-if (message.content.toLowerCase()  === prefix + 'Keygen') {
+if (message.content  === prefix + 'keygen') {
 const embed = {
   "color": 16449536,
   "footer": {
