@@ -1,4 +1,4 @@
-///Version 1.4.5
+///Version 1.5.1
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const auth = require("./auth.json");
@@ -72,10 +72,27 @@ console.log('A Premium Key Was Redeemed - Lifetime')
   (message.guild.channels.get('627937789027155978').send(`${message.author.tag} \`${message.author.id}\` redeemed a lifetime premium key`));
   return;
 }
+if (message.content === prefix + 'version') {
+const embed = {
+  "color": 16449536,
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/attachments/615548285456744504/615553739784454167/DAC_logo_square.jpg",
+    "text": "DAC © 2019; All Rights Reserved"
+  },
+  "fields": [
+    {
+      "name": "Bot Version",
+      "value": "v.1.5.1"
+    }
+  ]
+};
+  message.delete()
+  message.channel.send({embed})
+}
 /// Ping/Latency Command
  if (message.content === prefix + 'ping') {
    message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
-        }}
+        }
 /// Avatar Command
  if (message.content === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
@@ -85,7 +102,7 @@ if (message.content === prefix + 'DAC-158763') {
   message.delete()
   message.member.addRole("569313830845415424");
 }
-//Reacytion - Hello React
+//Reaction - Hello React
 if (message.content === 'Hello' || (message.content === 'hello' || (message.content === 'Hi' || (message.content === 'hi')))) {
 message.react('👋')
 }
@@ -105,10 +122,9 @@ const embed = {
   ]
 };
   message.delete()
-  message.author.send({embed});
-///Enter/Leave Logs
+  message.author.send({embed})
 }
-});
+///Enter/Leave Logs
 client.on('guildMemberAdd', member => {
   const channel = member.guild.channels.find(ch => ch.name === 'member-logs');
   if (!channel) return;
