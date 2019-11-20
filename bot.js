@@ -21,7 +21,7 @@ client.on("ready", async () => {
   });
 // Embed Commands
   client.on('message', message => {
-if (message.content  === devprefix + 'keys') {
+if (message.content.toLowerCase() === devprefix + 'keys') {
 if(message.channel.type =='dm') return;
 const developer = message.guild.roles.get("638563829902606356")
         message.delete()
@@ -35,7 +35,7 @@ const developer = message.guild.roles.get("638563829902606356")
 /// Help Command
 client.on('message', message => {
   if(!message.content) return;
-if (message.content  === prefix + 'help') {
+if (message.content.toLowerCase() === prefix + 'help') {
 const embed = {
   "color": 39674,
   "footer": {
@@ -74,7 +74,7 @@ console.log('A Premium Key Was Redeemed - Lifetime')
   (message.guild.channels.get('627937789027155978').send(`${message.author.tag} \`${message.author.id}\` redeemed a lifetime premium key`));
   return;
 }
-if (message.content === prefix + 'version') {
+if (message.content.toLowerCase() === prefix + 'version') {
 const embed = {
   "color": 16449536,
   "footer": {
@@ -92,14 +92,14 @@ const embed = {
   message.channel.send({embed})
 }
 /// Ping/Latency Command
- if (message.content === prefix + 'ping') {
+ if (message.content.toLowerCase() === prefix + 'ping') {
     message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
         }
 /// Avatar Command
- if (message.content === prefix + 'avatar') {
+ if (message.content.toLowerCase() === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
  }
-if(message.content === "back in nam") {
+if(message.content.toLowerCase() === "back in nam") {
 message.channel.send('https://tenor.com/Qk0Y.gif')
 }
 ///Entry Key
@@ -115,7 +115,7 @@ if (message.content === 'help' || (message.content === 'Help')) {
 message.reply('Need help? Send a DM to <@646723256241487882> for assistance!')
 }
 ///Generate New Key
-if (message.content  === prefix + 'keygen') {
+if (message.content.toLowerCase() === prefix + 'keygen') {
 const embed = {
   "color": 16449536,
   "footer": {
