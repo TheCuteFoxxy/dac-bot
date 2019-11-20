@@ -93,7 +93,12 @@ const embed = {
 }
 /// Ping/Latency Command
  if (message.content.toLowerCase()  === prefix + 'Ping') {
-   message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
+  try {
+    message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
+  } catch (error) {
+    
+  }(error)=>{console.log(error.name + ":" + error.message);
+  }
         }
 /// Avatar Command
  if (message.content === prefix + 'avatar') {
