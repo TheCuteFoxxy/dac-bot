@@ -107,6 +107,9 @@ if (message.content === prefix + 'DAC-158763') {
 if (message.content === 'Hello' || (message.content === 'hello' || (message.content === 'Hi' || (message.content === 'hi')))) {
 message.react('👋')
 }
+if (message.content === 'Help' || (message.content === 'help')) {
+message.reply('Need help? Send a DM to <@646723256241487882> for assistance!')
+}
 ///Generate New Key
 if (message.content === prefix + 'keygen') {
 const embed = {
