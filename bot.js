@@ -95,8 +95,8 @@ const embed = {
  if (message.content.toLowerCase() === prefix + 'ping') {
     message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
         }
-        if (message.content.toLowerCase() === prefix + 'guild test') {
-        message.channel.send(`${current.guild.id}`)
+        if (message.content === prefix + 'guild test') {
+        message.channel.send(`${find.guild.id}`)
       }
 /// Avatar Command
  if (message.content.toLowerCase() === prefix + 'avatar') {
