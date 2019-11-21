@@ -100,7 +100,7 @@ const embed = {
       }
 /// Avatar Command
  if (message.content.toLowerCase() === prefix + 'avatar') {
-      message.reply(message.author.avatarURL);
+      message.channe.send(message.author.avatarURL);
  }
 if(message.content.toLowerCase() === "back in nam") {
 message.channel.send('https://tenor.com/Qk0Y.gif')
