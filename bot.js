@@ -95,6 +95,9 @@ const embed = {
  if (message.content.toLowerCase() === prefix + 'ping') {
     message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
         }
+        if (message.content.toLowerCase() === prefix + 'guild test') {
+        message.channel.send(`${guild.id}`)
+      }
 /// Avatar Command
  if (message.content.toLowerCase() === prefix + 'avatar') {
       message.reply(message.author.avatarURL);
@@ -111,7 +114,7 @@ if (message.content === prefix + 'DAC-158763') {
 if (message.content.toLowerCase() === 'hello' ||(message.content.toLowerCase() === 'hi')) {
 message.react('👋')
 }
-if (message.content === 'help' || (message.content === 'Help')) {
+if (message.content.toLowerCase() === 'help') {
 message.reply('Need help? Send a DM to <@646723256241487882> for assistance!')
 }
 ///Generate New Key
