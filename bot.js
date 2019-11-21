@@ -96,7 +96,7 @@ const embed = {
     message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
         }
         if (message.content.toLowerCase() === prefix + 'guild test') {
-        message.channel.send(`${guild.id}`)
+        message.channel.send(`${current.guild.id}`)
       }
 /// Avatar Command
  if (message.content.toLowerCase() === prefix + 'avatar') {
