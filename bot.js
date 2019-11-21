@@ -165,5 +165,8 @@ const embed = {
 client.on('guildMemberAdd', member => {
 member.send({embed})
 })
+  
+kill code
+
 });
 client.login(auth.token);
